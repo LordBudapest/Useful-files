@@ -1,0 +1,326 @@
+\documentclass[10pt]{beamer}
+
+\usetheme{metropolis}
+\setbeamertemplate{navigation symbols}{}
+\setbeamercolor{background canvas}{bg=white}
+\metroset{progressbar=none}
+
+\title{GNN Neural Surrogates}
+\subtitle{Why and how the current papers use program graphs}
+\author{}
+\institute{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}{Research Context}
+  \begin{block}{Working Idea}
+    Convert a program into one or more graphs, pass those graphs through a GNN, and reason over the learned vectors instead of reasoning directly over the original program.
+  \end{block}
+
+  \begin{itemize}
+    \item The learned vectors act as a \textbf{neural surrogate} for program structure and behavior.
+    \item Possible downstream uses: cloud-side analysis without exposing raw code, code transformation, bug localization, vulnerability detection, similarity search, and tool selection.
+    \item For now, the useful question is not ``which paper gets the best score?'' but ``why do they need the surrogate, and how do they build it?''
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Overview}
+  \tableofcontents
+\end{frame}
+
+\section{Reading Lens}
+
+\begin{frame}{Common Pipeline}
+  \begin{enumerate}
+    \item Choose a program view: source code, IR, CFG, DFG, CPG, execution trace, or query/target graph.
+    \item Convert that view into a graph: nodes represent tokens, statements, variables, instructions, methods, or basic blocks.
+    \item Add typed edges: syntax, control flow, data flow, dependence, call, token order, or trace relation.
+    \item Run a GNN: message passing turns local graph neighborhoods into vector representations.
+    \item Read out vectors: classify a graph, score nodes, compare graph pairs, retrieve matches, or rank tools.
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}{How We Should Read Each Paper}
+  \begin{itemize}
+    \item \textbf{Why:} what original program-analysis task is too hard, too slow, too manual, or too sensitive to do directly?
+    \item \textbf{Graph:} what program information is preserved in the surrogate?
+    \item \textbf{GNN role:} what kind of message passing or embedding is used?
+    \item \textbf{Vector use:} what is done after the vectors are produced?
+    \item \textbf{Research lesson:} what design choice is relevant for our neural-surrogate direction?
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Paper Categories}
+  \footnotesize
+  \setlength{\tabcolsep}{2pt}
+  \begin{tabular}{p{0.24\linewidth}p{0.25\linewidth}p{0.38\linewidth}}
+    \textbf{Category} & \textbf{Papers} & \textbf{Surrogate Question} \\
+    \hline
+    Foundation & Allamanis & Why graph representations make sense for programs \\
+    Vulnerability detection & Devign, GraphEye & Can vectors summarize vulnerable program semantics? \\
+    Trace-based security analysis & Silent buffer overflows & Can vectors replace source-code access when only execution traces exist? \\
+    Bug-pattern search & SICode, NeuroMatch & Can vector arithmetic approximate subgraph reasoning? \\
+    Program similarity & funcGNN & Can vectors approximate expensive graph similarity? \\
+    Verification support & Graves & Can vectors predict which formal tool should analyze a program? \\
+  \end{tabular}
+\end{frame}
+
+\section{Foundation}
+
+\begin{frame}{Allamanis: GNNs In Program Analysis}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.48\linewidth}
+    \textbf{Why}
+    \begin{itemize}
+      \item Programs have structure that token sequences flatten away.
+      \item Static analyses expose useful relations, but exact analyses can be brittle, incomplete, or task-specific.
+      \item GNNs give a way to learn from program structure while keeping relational information explicit.
+    \end{itemize}
+
+    \column{0.48\linewidth}
+    \textbf{How}
+    \begin{itemize}
+      \item Represent program elements as graph nodes.
+      \item Connect nodes using syntactic, control-flow, data-flow, and variable-use relations.
+      \item Use message passing to aggregate local context into node or graph vectors.
+    \end{itemize}
+  \end{columns}
+
+  \vspace{0.25cm}
+  \textbf{Use for us:} vocabulary and motivation for treating the graph embedding as a program surrogate.
+\end{frame}
+
+\section{Vulnerability Detection}
+
+\begin{frame}{Devign}
+  \small
+  \begin{columns}[T,onlytextwidth]
+    \column{0.48\linewidth}
+    \textbf{Why}
+    \begin{itemize}
+      \item Vulnerability detection needs semantic clues that manual patterns or token sequences often miss.
+      \item The goal is to classify vulnerable functions in real C projects.
+      \item The surrogate should preserve enough syntax, control, and data dependency information to support a security decision.
+    \end{itemize}
+
+    \column{0.48\linewidth}
+    \textbf{How}
+    \begin{itemize}
+      \item Build a composite code graph for each function.
+      \item Include AST-like structure, control-flow edges, data-flow edges, and token-order edges.
+      \item Run gated graph recurrent message passing, then use a convolution/readout module for graph-level classification.
+    \end{itemize}
+  \end{columns}
+
+  \vspace{0.25cm}
+  \textbf{Use for us:} ``function $\rightarrow$ semantic graph $\rightarrow$ vector $\rightarrow$ vulnerability label.''
+\end{frame}
+
+\begin{frame}{GraphEye}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.48\linewidth}
+    \textbf{Why}
+    \begin{itemize}
+      \item Manual code review does not scale for C/C++ vulnerability detection.
+      \item The authors assume vulnerable and non-vulnerable functions differ in their code property graph structure.
+      \item They want a learned graph classifier that focuses on the important parts of the program graph.
+    \end{itemize}
+
+    \column{0.48\linewidth}
+    \textbf{How}
+    \begin{itemize}
+      \item Convert source code into a code property graph.
+      \item Vectorize that graph with VecCPG to encode syntax and semantic features.
+      \item Use a graph attention model, GcGAT, to classify the function graph.
+    \end{itemize}
+  \end{columns}
+
+  \vspace{0.25cm}
+  \textbf{Use for us:} attention is useful when the surrogate graph is large and only some neighborhoods matter.
+\end{frame}
+
+\section{Trace-Based Analysis}
+
+\begin{frame}{Silent Buffer Overflows}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.48\linewidth}
+    \textbf{Why}
+    \begin{itemize}
+      \item Some buffer overflows produce no obvious crash or visible symptom.
+      \item Source code may be unavailable, so source-level graph construction is not always possible.
+      \item The task becomes reasoning from execution traces instead of raw source.
+    \end{itemize}
+
+    \column{0.48\linewidth}
+    \textbf{How}
+    \begin{itemize}
+      \item Extract a DFG+ graph from an execution trace.
+      \item Use typed data-flow and trace relations to represent how values move during execution.
+      \item Train a modified relational GCN to detect overflow-relevant behavior from the graph.
+    \end{itemize}
+  \end{columns}
+
+  \vspace{0.25cm}
+  \textbf{Use for us:} the surrogate does not have to come from source code; dynamic traces can also become graphs and vectors.
+\end{frame}
+
+\section{Bug Pattern And Subgraph Reasoning}
+
+\begin{frame}{SICode}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.48\linewidth}
+    \textbf{Why}
+    \begin{itemize}
+      \item Given a known buggy snippet, we want to find similar hidden buggy structures in a large target project.
+      \item Exact subgraph isomorphism is expensive.
+      \item Whole-function similarity can miss cases where the bug is only a small substructure inside a different-looking function.
+    \end{itemize}
+
+    \column{0.48\linewidth}
+    \textbf{How}
+    \begin{itemize}
+      \item Slice or extract a query graph around the known buggy code.
+      \item Convert target code into featured code graphs.
+      \item Train a graph embedding model so subgraph-isomorphism relations can be judged by comparing embedding vectors.
+    \end{itemize}
+  \end{columns}
+
+  \vspace{0.25cm}
+  \textbf{Use for us:} a direct example of replacing an expensive symbolic graph problem with vector-space reasoning.
+\end{frame}
+
+\begin{frame}{NeuroMatch}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.48\linewidth}
+    \textbf{Why}
+    \begin{itemize}
+      \item Subgraph matching is important but NP-complete.
+      \item Large query and target graphs make exact combinatorial matching impractical.
+      \item The authors want approximate matching directly in embedding space.
+    \end{itemize}
+
+    \column{0.48\linewidth}
+    \textbf{How}
+    \begin{itemize}
+      \item Decompose query and target graphs into smaller neighborhoods.
+      \item Embed those subgraphs with a GNN.
+      \item Train the embedding space to respect subgraph-relation geometry, then retrieve matches by vector comparison.
+    \end{itemize}
+  \end{columns}
+
+  \vspace{0.25cm}
+  \textbf{Use for us:} method background for SICode-style bug retrieval and any future vectorized pattern-matching task.
+\end{frame}
+
+\section{Similarity And Tool Selection}
+
+\begin{frame}{funcGNN}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.48\linewidth}
+    \textbf{Why}
+    \begin{itemize}
+      \item Program similarity supports clone detection, plagiarism detection, code search, and refactoring.
+      \item CFG-based graph edit distance captures structure but is computationally expensive.
+      \item The goal is to learn a cheaper vector surrogate for similarity.
+    \end{itemize}
+
+    \column{0.48\linewidth}
+    \textbf{How}
+    \begin{itemize}
+      \item Convert programs into control-flow graphs.
+      \item Use a GNN/Siamese-style setup to embed two program graphs.
+      \item Compare graph embeddings to estimate similarity or approximate graph edit distance.
+    \end{itemize}
+  \end{columns}
+
+  \vspace{0.25cm}
+  \textbf{Use for us:} a close analogy for code transformation or migration, where vector-space similarity could guide alignment between languages.
+\end{frame}
+
+\begin{frame}{Graves}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.48\linewidth}
+    \textbf{Why}
+    \begin{itemize}
+      \item Software verification has many tools and algorithms, and no single tool is best on every program.
+      \item Choosing the verifier manually requires expertise.
+      \item The goal is not to verify directly, but to predict which verifier will work well.
+    \end{itemize}
+
+    \column{0.48\linewidth}
+    \textbf{How}
+    \begin{itemize}
+      \item Build a graph representation of the program.
+      \item Feed that graph to a GNN or graph-attention model.
+      \item Predict a score for each verifier and use the scores to choose or order tools.
+    \end{itemize}
+  \end{columns}
+
+  \vspace{0.25cm}
+  \textbf{Use for us:} a surrogate can be used for orchestration: it can decide what analysis to run, not only output the final answer.
+\end{frame}
+
+\section{Synthesis}
+
+\begin{frame}{What The Papers Teach Us}
+  \begin{itemize}
+    \item Program-to-vector surrogates are already useful for classification, retrieval, similarity, and algorithm selection.
+    \item The graph construction is as important as the neural model because it decides what information survives.
+    \item Source graphs are good for static code reasoning; trace graphs are good when runtime behavior or source privacy matters.
+    \item Graph-pair embeddings are especially relevant for transformation, migration, and pattern matching.
+    \item Node-level embeddings are the right direction for localization tasks such as ranking likely buggy statements or variables.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Relation To Our Research Ideas}
+  \begin{itemize}
+    \item \textbf{Cloud-side private analysis:} closest prior idea is replacing source code with vectors, but these papers do not prove privacy; they mostly prove task usefulness.
+    \item \textbf{Code transformation:} funcGNN and subgraph matching suggest ways to align structures, but the current set does not directly solve Java-to-COBOL translation.
+    \item \textbf{Error detection and localization:} Devign and GraphEye support graph-level detection; a node-scoring version would need node-level supervision or an attribution mechanism.
+    \item \textbf{Tool assistance:} Graves suggests using GNN vectors to choose downstream analyzers instead of replacing them.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Open Design Questions For Us}
+  \begin{itemize}
+    \item What graph view should be the surrogate: AST, CFG, DFG, CPG, IR graph, trace graph, or a bundle of graphs?
+    \item Should the surrogate be graph-level, node-level, edge-level, or graph-pair based?
+    \item How much information must the vector preserve for the task, and how much should it intentionally hide for privacy?
+    \item Can the vector representation support multiple tasks, or should each task get a specialized surrogate?
+    \item For transformation, do we need embeddings alone, or embeddings plus a decoder/generator?
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Suggested Reading Order}
+  \begin{enumerate}
+    \item Start with Allamanis for the general program-graph motivation.
+    \item Read Devign and GraphEye for function-level vulnerability surrogates.
+    \item Read the silent-buffer-overflow paper to see trace-based surrogates without source-code access.
+    \item Read SICode and NeuroMatch for vectorized subgraph reasoning.
+    \item Read funcGNN for graph-similarity surrogates.
+    \item Read Graves for surrogate-driven tool selection.
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}{References In This Folder}
+  \scriptsize
+  \begin{itemize}
+    \item Allamanis, ``Graph Neural Networks in Program Analysis'' / \texttt{allamanis2021graph.pdf}
+    \item Zhou et al., ``Devign'' / \texttt{1909.03496v1.pdf}
+    \item Zhou et al., ``GraphEye'' / \texttt{2202.02501v1.pdf}
+    \item Wang et al., ``Spotting Silent Buffer Overflows...'' / \texttt{2102.10452v1.pdf}
+    \item Gong et al., ``SICode'' / \texttt{3643916.3646556.pdf}
+    \item Ying et al., ``Neural Subgraph Matching'' / \texttt{2007.03092v2.pdf}
+    \item Nair et al., ``funcGNN'' / \texttt{2007.13239v3.pdf}
+    \item Leeson and Dwyer, ``Algorithm Selection for Software Verification...'' / \texttt{2201.11711v3.pdf}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[standout]
+  Read each paper as a surrogate-design case study
+\end{frame}
+
+\end{document}
