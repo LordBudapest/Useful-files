@@ -1,0 +1,3500 @@
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineSystem.cmake:12 (find_program)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_UNAME"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "uname"
+    candidate_directories:
+      - "/home/bhaskar/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/Scripts/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/"
+      - "/mnt/c/Program Files/Microsoft MPI/Bin/"
+      - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath/"
+      - "/mnt/c/WINDOWS/system32/"
+      - "/mnt/c/WINDOWS/"
+      - "/mnt/c/WINDOWS/System32/Wbem/"
+      - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+      - "/mnt/c/WINDOWS/System32/OpenSSH/"
+      - "/mnt/c/Program Files/Microsoft VS Code/bin/"
+      - "/mnt/c/Python27/"
+      - "/mnt/c/hadoop/bin/"
+      - "/mnt/c/Progra~1/Java/jdk-22/bin/"
+      - "/mnt/c/hadoop/pig/bin/"
+      - "/mnt/c/ProgramData/chocolatey/bin/"
+      - "/mnt/c/Program Files/Git/cmd/"
+      - "/mnt/c/Program Files/GitHub CLI/"
+      - "/mnt/c/Program Files/Docker/Docker/resources/bin/"
+      - "/mnt/c/Strawberry/c/bin/"
+      - "/mnt/c/Strawberry/perl/site/bin/"
+      - "/mnt/c/Strawberry/perl/bin/"
+      - "/mnt/c/Program Files/LLVM/bin/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/"
+      - "/mnt/c/Users/Bhaskar Pandey/.elan/bin/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/MiKTeX/miktex/bin/x64/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Microsoft/WindowsApps/"
+      - "/snap/bin/"
+    searched_directories:
+      - "/home/bhaskar/.local/bin/uname"
+      - "/usr/local/sbin/uname"
+      - "/usr/local/bin/uname"
+      - "/usr/sbin/uname"
+    found: "/usr/bin/uname"
+    search_context:
+      ENV{PATH}:
+        - "/home/bhaskar/.local/bin"
+        - "/home/bhaskar/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/Scripts/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/"
+        - "/mnt/c/Program Files/Microsoft MPI/Bin/"
+        - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Program Files/Microsoft VS Code/bin"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Python27"
+        - "/mnt/c/hadoop/bin"
+        - "/mnt/c/Progra~1/Java/jdk-22/bin"
+        - "/mnt/c/hadoop/pig/bin"
+        - "/mnt/c/ProgramData/chocolatey/bin"
+        - "/mnt/c/Program Files/Git/cmd"
+        - "/mnt/c/Program Files/GitHub CLI/"
+        - "/mnt/c/Program Files/Docker/Docker/resources/bin"
+        - "/mnt/c/Strawberry/c/bin"
+        - "/mnt/c/Strawberry/perl/site/bin"
+        - "/mnt/c/Strawberry/perl/bin"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/Scripts/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/"
+        - "/mnt/c/Users/Bhaskar Pandey/.elan/bin"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/MiKTeX/miktex/bin/x64/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Microsoft/WindowsApps"
+        - "/mnt/c/Strawberry/perl/bin"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/snap/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Linux - 5.15.167.4-microsoft-standard-WSL2 - x86_64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeUnixFindMake.cmake:5 (find_program)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_MAKE_PROGRAM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gmake"
+      - "make"
+      - "smake"
+    candidate_directories:
+      - "/home/bhaskar/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/Scripts/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/"
+      - "/mnt/c/Program Files/Microsoft MPI/Bin/"
+      - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath/"
+      - "/mnt/c/WINDOWS/system32/"
+      - "/mnt/c/WINDOWS/"
+      - "/mnt/c/WINDOWS/System32/Wbem/"
+      - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+      - "/mnt/c/WINDOWS/System32/OpenSSH/"
+      - "/mnt/c/Program Files/Microsoft VS Code/bin/"
+      - "/mnt/c/Python27/"
+      - "/mnt/c/hadoop/bin/"
+      - "/mnt/c/Progra~1/Java/jdk-22/bin/"
+      - "/mnt/c/hadoop/pig/bin/"
+      - "/mnt/c/ProgramData/chocolatey/bin/"
+      - "/mnt/c/Program Files/Git/cmd/"
+      - "/mnt/c/Program Files/GitHub CLI/"
+      - "/mnt/c/Program Files/Docker/Docker/resources/bin/"
+      - "/mnt/c/Strawberry/c/bin/"
+      - "/mnt/c/Strawberry/perl/site/bin/"
+      - "/mnt/c/Strawberry/perl/bin/"
+      - "/mnt/c/Program Files/LLVM/bin/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/"
+      - "/mnt/c/Users/Bhaskar Pandey/.elan/bin/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/MiKTeX/miktex/bin/x64/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Microsoft/WindowsApps/"
+      - "/snap/bin/"
+    searched_directories:
+      - "/home/bhaskar/.local/bin/gmake"
+      - "/usr/local/sbin/gmake"
+      - "/usr/local/bin/gmake"
+      - "/usr/sbin/gmake"
+      - "/usr/bin/gmake"
+      - "/sbin/gmake"
+      - "/bin/gmake"
+      - "/usr/games/gmake"
+      - "/usr/local/games/gmake"
+      - "/usr/lib/wsl/lib/gmake"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/Scripts/gmake"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/gmake"
+      - "/mnt/c/Program Files/Microsoft MPI/Bin/gmake"
+      - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath/gmake"
+      - "/mnt/c/WINDOWS/system32/gmake"
+      - "/mnt/c/WINDOWS/gmake"
+      - "/mnt/c/WINDOWS/System32/Wbem/gmake"
+      - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/gmake"
+      - "/mnt/c/WINDOWS/System32/OpenSSH/gmake"
+      - "/mnt/c/Program Files/Microsoft VS Code/bin/gmake"
+      - "/mnt/c/Python27/gmake"
+      - "/mnt/c/hadoop/bin/gmake"
+      - "/mnt/c/Progra~1/Java/jdk-22/bin/gmake"
+      - "/mnt/c/hadoop/pig/bin/gmake"
+      - "/mnt/c/ProgramData/chocolatey/bin/gmake"
+      - "/mnt/c/Program Files/Git/cmd/gmake"
+      - "/mnt/c/Program Files/GitHub CLI/gmake"
+      - "/mnt/c/Program Files/Docker/Docker/resources/bin/gmake"
+      - "/mnt/c/Strawberry/c/bin/gmake"
+      - "/mnt/c/Strawberry/perl/site/bin/gmake"
+      - "/mnt/c/Strawberry/perl/bin/gmake"
+      - "/mnt/c/Program Files/LLVM/bin/gmake"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/Scripts/gmake"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/gmake"
+      - "/mnt/c/Users/Bhaskar Pandey/.elan/bin/gmake"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/MiKTeX/miktex/bin/x64/gmake"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Microsoft/WindowsApps/gmake"
+      - "/snap/bin/gmake"
+      - "/home/bhaskar/.local/bin/make"
+      - "/usr/local/sbin/make"
+      - "/usr/local/bin/make"
+      - "/usr/sbin/make"
+    found: "/usr/bin/make"
+    search_context:
+      ENV{PATH}:
+        - "/home/bhaskar/.local/bin"
+        - "/home/bhaskar/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/Scripts/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/"
+        - "/mnt/c/Program Files/Microsoft MPI/Bin/"
+        - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Program Files/Microsoft VS Code/bin"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Python27"
+        - "/mnt/c/hadoop/bin"
+        - "/mnt/c/Progra~1/Java/jdk-22/bin"
+        - "/mnt/c/hadoop/pig/bin"
+        - "/mnt/c/ProgramData/chocolatey/bin"
+        - "/mnt/c/Program Files/Git/cmd"
+        - "/mnt/c/Program Files/GitHub CLI/"
+        - "/mnt/c/Program Files/Docker/Docker/resources/bin"
+        - "/mnt/c/Strawberry/c/bin"
+        - "/mnt/c/Strawberry/perl/site/bin"
+        - "/mnt/c/Strawberry/perl/bin"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/Scripts/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/"
+        - "/mnt/c/Users/Bhaskar Pandey/.elan/bin"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/MiKTeX/miktex/bin/x64/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Microsoft/WindowsApps"
+        - "/mnt/c/Strawberry/perl/bin"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCompiler.cmake:73 (find_program)"
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:64 (_cmake_find_compiler)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER"
+    description: "C compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cc"
+      - "gcc"
+      - "cl"
+      - "bcc"
+      - "xlc"
+      - "icx"
+      - "clang"
+    candidate_directories:
+      - "/home/bhaskar/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/Scripts/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/"
+      - "/mnt/c/Program Files/Microsoft MPI/Bin/"
+      - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath/"
+      - "/mnt/c/WINDOWS/system32/"
+      - "/mnt/c/WINDOWS/"
+      - "/mnt/c/WINDOWS/System32/Wbem/"
+      - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+      - "/mnt/c/WINDOWS/System32/OpenSSH/"
+      - "/mnt/c/Program Files/Microsoft VS Code/bin/"
+      - "/mnt/c/Python27/"
+      - "/mnt/c/hadoop/bin/"
+      - "/mnt/c/Progra~1/Java/jdk-22/bin/"
+      - "/mnt/c/hadoop/pig/bin/"
+      - "/mnt/c/ProgramData/chocolatey/bin/"
+      - "/mnt/c/Program Files/Git/cmd/"
+      - "/mnt/c/Program Files/GitHub CLI/"
+      - "/mnt/c/Program Files/Docker/Docker/resources/bin/"
+      - "/mnt/c/Strawberry/c/bin/"
+      - "/mnt/c/Strawberry/perl/site/bin/"
+      - "/mnt/c/Strawberry/perl/bin/"
+      - "/mnt/c/Program Files/LLVM/bin/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/"
+      - "/mnt/c/Users/Bhaskar Pandey/.elan/bin/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/MiKTeX/miktex/bin/x64/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Microsoft/WindowsApps/"
+      - "/snap/bin/"
+    searched_directories:
+      - "/home/bhaskar/.local/bin/cc"
+      - "/usr/local/sbin/cc"
+      - "/usr/local/bin/cc"
+      - "/usr/sbin/cc"
+    found: "/usr/bin/cc"
+    search_context:
+      ENV{PATH}:
+        - "/home/bhaskar/.local/bin"
+        - "/home/bhaskar/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/Scripts/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/"
+        - "/mnt/c/Program Files/Microsoft MPI/Bin/"
+        - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Program Files/Microsoft VS Code/bin"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Python27"
+        - "/mnt/c/hadoop/bin"
+        - "/mnt/c/Progra~1/Java/jdk-22/bin"
+        - "/mnt/c/hadoop/pig/bin"
+        - "/mnt/c/ProgramData/chocolatey/bin"
+        - "/mnt/c/Program Files/Git/cmd"
+        - "/mnt/c/Program Files/GitHub CLI/"
+        - "/mnt/c/Program Files/Docker/Docker/resources/bin"
+        - "/mnt/c/Strawberry/c/bin"
+        - "/mnt/c/Strawberry/perl/site/bin"
+        - "/mnt/c/Strawberry/perl/bin"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/Scripts/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/"
+        - "/mnt/c/Users/Bhaskar Pandey/.elan/bin"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/MiKTeX/miktex/bin/x64/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Microsoft/WindowsApps"
+        - "/mnt/c/Strawberry/perl/bin"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:468 (find_file)"
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:506 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/"
+    found: "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      ENV{PATH}:
+        - "/home/bhaskar/.local/bin"
+        - "/home/bhaskar/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/Scripts/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/"
+        - "/mnt/c/Program Files/Microsoft MPI/Bin/"
+        - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Program Files/Microsoft VS Code/bin"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Python27"
+        - "/mnt/c/hadoop/bin"
+        - "/mnt/c/Progra~1/Java/jdk-22/bin"
+        - "/mnt/c/hadoop/pig/bin"
+        - "/mnt/c/ProgramData/chocolatey/bin"
+        - "/mnt/c/Program Files/Git/cmd"
+        - "/mnt/c/Program Files/GitHub CLI/"
+        - "/mnt/c/Program Files/Docker/Docker/resources/bin"
+        - "/mnt/c/Strawberry/c/bin"
+        - "/mnt/c/Strawberry/perl/site/bin"
+        - "/mnt/c/Strawberry/perl/bin"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/Scripts/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/"
+        - "/mnt/c/Users/Bhaskar Pandey/.elan/bin"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/MiKTeX/miktex/bin/x64/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Microsoft/WindowsApps"
+        - "/mnt/c/Strawberry/perl/bin"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/snap/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/bhaskar/projects/graves/src/graph-builder/build/CMakeFiles/4.3.2/CompilerIdC/a.out
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ar"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/bhaskar/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/Scripts/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/"
+      - "/mnt/c/Program Files/Microsoft MPI/Bin/"
+      - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath/"
+      - "/mnt/c/WINDOWS/system32/"
+      - "/mnt/c/WINDOWS/"
+      - "/mnt/c/WINDOWS/System32/Wbem/"
+      - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+      - "/mnt/c/WINDOWS/System32/OpenSSH/"
+      - "/mnt/c/Program Files/Microsoft VS Code/bin/"
+      - "/mnt/c/Python27/"
+      - "/mnt/c/hadoop/bin/"
+      - "/mnt/c/Progra~1/Java/jdk-22/bin/"
+      - "/mnt/c/hadoop/pig/bin/"
+      - "/mnt/c/ProgramData/chocolatey/bin/"
+      - "/mnt/c/Program Files/Git/cmd/"
+      - "/mnt/c/Program Files/GitHub CLI/"
+      - "/mnt/c/Program Files/Docker/Docker/resources/bin/"
+      - "/mnt/c/Strawberry/c/bin/"
+      - "/mnt/c/Strawberry/perl/site/bin/"
+      - "/mnt/c/Strawberry/perl/bin/"
+      - "/mnt/c/Program Files/LLVM/bin/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/"
+      - "/mnt/c/Users/Bhaskar Pandey/.elan/bin/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/MiKTeX/miktex/bin/x64/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Microsoft/WindowsApps/"
+      - "/snap/bin/"
+    found: "/usr/bin/ar"
+    search_context:
+      ENV{PATH}:
+        - "/home/bhaskar/.local/bin"
+        - "/home/bhaskar/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/Scripts/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/"
+        - "/mnt/c/Program Files/Microsoft MPI/Bin/"
+        - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Program Files/Microsoft VS Code/bin"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Python27"
+        - "/mnt/c/hadoop/bin"
+        - "/mnt/c/Progra~1/Java/jdk-22/bin"
+        - "/mnt/c/hadoop/pig/bin"
+        - "/mnt/c/ProgramData/chocolatey/bin"
+        - "/mnt/c/Program Files/Git/cmd"
+        - "/mnt/c/Program Files/GitHub CLI/"
+        - "/mnt/c/Program Files/Docker/Docker/resources/bin"
+        - "/mnt/c/Strawberry/c/bin"
+        - "/mnt/c/Strawberry/perl/site/bin"
+        - "/mnt/c/Strawberry/perl/bin"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/Scripts/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/"
+        - "/mnt/c/Users/Bhaskar Pandey/.elan/bin"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/MiKTeX/miktex/bin/x64/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Microsoft/WindowsApps"
+        - "/mnt/c/Strawberry/perl/bin"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_RANLIB"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ranlib"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/bhaskar/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/Scripts/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/"
+      - "/mnt/c/Program Files/Microsoft MPI/Bin/"
+      - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath/"
+      - "/mnt/c/WINDOWS/system32/"
+      - "/mnt/c/WINDOWS/"
+      - "/mnt/c/WINDOWS/System32/Wbem/"
+      - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+      - "/mnt/c/WINDOWS/System32/OpenSSH/"
+      - "/mnt/c/Program Files/Microsoft VS Code/bin/"
+      - "/mnt/c/Python27/"
+      - "/mnt/c/hadoop/bin/"
+      - "/mnt/c/Progra~1/Java/jdk-22/bin/"
+      - "/mnt/c/hadoop/pig/bin/"
+      - "/mnt/c/ProgramData/chocolatey/bin/"
+      - "/mnt/c/Program Files/Git/cmd/"
+      - "/mnt/c/Program Files/GitHub CLI/"
+      - "/mnt/c/Program Files/Docker/Docker/resources/bin/"
+      - "/mnt/c/Strawberry/c/bin/"
+      - "/mnt/c/Strawberry/perl/site/bin/"
+      - "/mnt/c/Strawberry/perl/bin/"
+      - "/mnt/c/Program Files/LLVM/bin/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/"
+      - "/mnt/c/Users/Bhaskar Pandey/.elan/bin/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/MiKTeX/miktex/bin/x64/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Microsoft/WindowsApps/"
+      - "/snap/bin/"
+    found: "/usr/bin/ranlib"
+    search_context:
+      ENV{PATH}:
+        - "/home/bhaskar/.local/bin"
+        - "/home/bhaskar/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/Scripts/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/"
+        - "/mnt/c/Program Files/Microsoft MPI/Bin/"
+        - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Program Files/Microsoft VS Code/bin"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Python27"
+        - "/mnt/c/hadoop/bin"
+        - "/mnt/c/Progra~1/Java/jdk-22/bin"
+        - "/mnt/c/hadoop/pig/bin"
+        - "/mnt/c/ProgramData/chocolatey/bin"
+        - "/mnt/c/Program Files/Git/cmd"
+        - "/mnt/c/Program Files/GitHub CLI/"
+        - "/mnt/c/Program Files/Docker/Docker/resources/bin"
+        - "/mnt/c/Strawberry/c/bin"
+        - "/mnt/c/Strawberry/perl/site/bin"
+        - "/mnt/c/Strawberry/perl/bin"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/Scripts/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/"
+        - "/mnt/c/Users/Bhaskar Pandey/.elan/bin"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/MiKTeX/miktex/bin/x64/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Microsoft/WindowsApps"
+        - "/mnt/c/Strawberry/perl/bin"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_STRIP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "strip"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/bhaskar/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/Scripts/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/"
+      - "/mnt/c/Program Files/Microsoft MPI/Bin/"
+      - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath/"
+      - "/mnt/c/WINDOWS/system32/"
+      - "/mnt/c/WINDOWS/"
+      - "/mnt/c/WINDOWS/System32/Wbem/"
+      - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+      - "/mnt/c/WINDOWS/System32/OpenSSH/"
+      - "/mnt/c/Program Files/Microsoft VS Code/bin/"
+      - "/mnt/c/Python27/"
+      - "/mnt/c/hadoop/bin/"
+      - "/mnt/c/Progra~1/Java/jdk-22/bin/"
+      - "/mnt/c/hadoop/pig/bin/"
+      - "/mnt/c/ProgramData/chocolatey/bin/"
+      - "/mnt/c/Program Files/Git/cmd/"
+      - "/mnt/c/Program Files/GitHub CLI/"
+      - "/mnt/c/Program Files/Docker/Docker/resources/bin/"
+      - "/mnt/c/Strawberry/c/bin/"
+      - "/mnt/c/Strawberry/perl/site/bin/"
+      - "/mnt/c/Strawberry/perl/bin/"
+      - "/mnt/c/Program Files/LLVM/bin/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/"
+      - "/mnt/c/Users/Bhaskar Pandey/.elan/bin/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/MiKTeX/miktex/bin/x64/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Microsoft/WindowsApps/"
+      - "/snap/bin/"
+    found: "/usr/bin/strip"
+    search_context:
+      ENV{PATH}:
+        - "/home/bhaskar/.local/bin"
+        - "/home/bhaskar/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/Scripts/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/"
+        - "/mnt/c/Program Files/Microsoft MPI/Bin/"
+        - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Program Files/Microsoft VS Code/bin"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Python27"
+        - "/mnt/c/hadoop/bin"
+        - "/mnt/c/Progra~1/Java/jdk-22/bin"
+        - "/mnt/c/hadoop/pig/bin"
+        - "/mnt/c/ProgramData/chocolatey/bin"
+        - "/mnt/c/Program Files/Git/cmd"
+        - "/mnt/c/Program Files/GitHub CLI/"
+        - "/mnt/c/Program Files/Docker/Docker/resources/bin"
+        - "/mnt/c/Strawberry/c/bin"
+        - "/mnt/c/Strawberry/perl/site/bin"
+        - "/mnt/c/Strawberry/perl/bin"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/Scripts/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/"
+        - "/mnt/c/Users/Bhaskar Pandey/.elan/bin"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/MiKTeX/miktex/bin/x64/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Microsoft/WindowsApps"
+        - "/mnt/c/Strawberry/perl/bin"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ld"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/bhaskar/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/Scripts/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/"
+      - "/mnt/c/Program Files/Microsoft MPI/Bin/"
+      - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath/"
+      - "/mnt/c/WINDOWS/system32/"
+      - "/mnt/c/WINDOWS/"
+      - "/mnt/c/WINDOWS/System32/Wbem/"
+      - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+      - "/mnt/c/WINDOWS/System32/OpenSSH/"
+      - "/mnt/c/Program Files/Microsoft VS Code/bin/"
+      - "/mnt/c/Python27/"
+      - "/mnt/c/hadoop/bin/"
+      - "/mnt/c/Progra~1/Java/jdk-22/bin/"
+      - "/mnt/c/hadoop/pig/bin/"
+      - "/mnt/c/ProgramData/chocolatey/bin/"
+      - "/mnt/c/Program Files/Git/cmd/"
+      - "/mnt/c/Program Files/GitHub CLI/"
+      - "/mnt/c/Program Files/Docker/Docker/resources/bin/"
+      - "/mnt/c/Strawberry/c/bin/"
+      - "/mnt/c/Strawberry/perl/site/bin/"
+      - "/mnt/c/Strawberry/perl/bin/"
+      - "/mnt/c/Program Files/LLVM/bin/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/"
+      - "/mnt/c/Users/Bhaskar Pandey/.elan/bin/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/MiKTeX/miktex/bin/x64/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Microsoft/WindowsApps/"
+      - "/snap/bin/"
+    found: "/usr/bin/ld"
+    search_context:
+      ENV{PATH}:
+        - "/home/bhaskar/.local/bin"
+        - "/home/bhaskar/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/Scripts/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/"
+        - "/mnt/c/Program Files/Microsoft MPI/Bin/"
+        - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Program Files/Microsoft VS Code/bin"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Python27"
+        - "/mnt/c/hadoop/bin"
+        - "/mnt/c/Progra~1/Java/jdk-22/bin"
+        - "/mnt/c/hadoop/pig/bin"
+        - "/mnt/c/ProgramData/chocolatey/bin"
+        - "/mnt/c/Program Files/Git/cmd"
+        - "/mnt/c/Program Files/GitHub CLI/"
+        - "/mnt/c/Program Files/Docker/Docker/resources/bin"
+        - "/mnt/c/Strawberry/c/bin"
+        - "/mnt/c/Strawberry/perl/site/bin"
+        - "/mnt/c/Strawberry/perl/bin"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/Scripts/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/"
+        - "/mnt/c/Users/Bhaskar Pandey/.elan/bin"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/MiKTeX/miktex/bin/x64/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Microsoft/WindowsApps"
+        - "/mnt/c/Strawberry/perl/bin"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_NM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "nm"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/bhaskar/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/Scripts/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/"
+      - "/mnt/c/Program Files/Microsoft MPI/Bin/"
+      - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath/"
+      - "/mnt/c/WINDOWS/system32/"
+      - "/mnt/c/WINDOWS/"
+      - "/mnt/c/WINDOWS/System32/Wbem/"
+      - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+      - "/mnt/c/WINDOWS/System32/OpenSSH/"
+      - "/mnt/c/Program Files/Microsoft VS Code/bin/"
+      - "/mnt/c/Python27/"
+      - "/mnt/c/hadoop/bin/"
+      - "/mnt/c/Progra~1/Java/jdk-22/bin/"
+      - "/mnt/c/hadoop/pig/bin/"
+      - "/mnt/c/ProgramData/chocolatey/bin/"
+      - "/mnt/c/Program Files/Git/cmd/"
+      - "/mnt/c/Program Files/GitHub CLI/"
+      - "/mnt/c/Program Files/Docker/Docker/resources/bin/"
+      - "/mnt/c/Strawberry/c/bin/"
+      - "/mnt/c/Strawberry/perl/site/bin/"
+      - "/mnt/c/Strawberry/perl/bin/"
+      - "/mnt/c/Program Files/LLVM/bin/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/"
+      - "/mnt/c/Users/Bhaskar Pandey/.elan/bin/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/MiKTeX/miktex/bin/x64/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Microsoft/WindowsApps/"
+      - "/snap/bin/"
+    found: "/usr/bin/nm"
+    search_context:
+      ENV{PATH}:
+        - "/home/bhaskar/.local/bin"
+        - "/home/bhaskar/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/Scripts/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/"
+        - "/mnt/c/Program Files/Microsoft MPI/Bin/"
+        - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Program Files/Microsoft VS Code/bin"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Python27"
+        - "/mnt/c/hadoop/bin"
+        - "/mnt/c/Progra~1/Java/jdk-22/bin"
+        - "/mnt/c/hadoop/pig/bin"
+        - "/mnt/c/ProgramData/chocolatey/bin"
+        - "/mnt/c/Program Files/Git/cmd"
+        - "/mnt/c/Program Files/GitHub CLI/"
+        - "/mnt/c/Program Files/Docker/Docker/resources/bin"
+        - "/mnt/c/Strawberry/c/bin"
+        - "/mnt/c/Strawberry/perl/site/bin"
+        - "/mnt/c/Strawberry/perl/bin"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/Scripts/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/"
+        - "/mnt/c/Users/Bhaskar Pandey/.elan/bin"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/MiKTeX/miktex/bin/x64/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Microsoft/WindowsApps"
+        - "/mnt/c/Strawberry/perl/bin"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJDUMP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "objdump"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/bhaskar/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/Scripts/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/"
+      - "/mnt/c/Program Files/Microsoft MPI/Bin/"
+      - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath/"
+      - "/mnt/c/WINDOWS/system32/"
+      - "/mnt/c/WINDOWS/"
+      - "/mnt/c/WINDOWS/System32/Wbem/"
+      - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+      - "/mnt/c/WINDOWS/System32/OpenSSH/"
+      - "/mnt/c/Program Files/Microsoft VS Code/bin/"
+      - "/mnt/c/Python27/"
+      - "/mnt/c/hadoop/bin/"
+      - "/mnt/c/Progra~1/Java/jdk-22/bin/"
+      - "/mnt/c/hadoop/pig/bin/"
+      - "/mnt/c/ProgramData/chocolatey/bin/"
+      - "/mnt/c/Program Files/Git/cmd/"
+      - "/mnt/c/Program Files/GitHub CLI/"
+      - "/mnt/c/Program Files/Docker/Docker/resources/bin/"
+      - "/mnt/c/Strawberry/c/bin/"
+      - "/mnt/c/Strawberry/perl/site/bin/"
+      - "/mnt/c/Strawberry/perl/bin/"
+      - "/mnt/c/Program Files/LLVM/bin/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/"
+      - "/mnt/c/Users/Bhaskar Pandey/.elan/bin/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/MiKTeX/miktex/bin/x64/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Microsoft/WindowsApps/"
+      - "/snap/bin/"
+    found: "/usr/bin/objdump"
+    search_context:
+      ENV{PATH}:
+        - "/home/bhaskar/.local/bin"
+        - "/home/bhaskar/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/Scripts/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/"
+        - "/mnt/c/Program Files/Microsoft MPI/Bin/"
+        - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Program Files/Microsoft VS Code/bin"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Python27"
+        - "/mnt/c/hadoop/bin"
+        - "/mnt/c/Progra~1/Java/jdk-22/bin"
+        - "/mnt/c/hadoop/pig/bin"
+        - "/mnt/c/ProgramData/chocolatey/bin"
+        - "/mnt/c/Program Files/Git/cmd"
+        - "/mnt/c/Program Files/GitHub CLI/"
+        - "/mnt/c/Program Files/Docker/Docker/resources/bin"
+        - "/mnt/c/Strawberry/c/bin"
+        - "/mnt/c/Strawberry/perl/site/bin"
+        - "/mnt/c/Strawberry/perl/bin"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/Scripts/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/"
+        - "/mnt/c/Users/Bhaskar Pandey/.elan/bin"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/MiKTeX/miktex/bin/x64/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Microsoft/WindowsApps"
+        - "/mnt/c/Strawberry/perl/bin"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJCOPY"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "objcopy"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/bhaskar/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/Scripts/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/"
+      - "/mnt/c/Program Files/Microsoft MPI/Bin/"
+      - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath/"
+      - "/mnt/c/WINDOWS/system32/"
+      - "/mnt/c/WINDOWS/"
+      - "/mnt/c/WINDOWS/System32/Wbem/"
+      - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+      - "/mnt/c/WINDOWS/System32/OpenSSH/"
+      - "/mnt/c/Program Files/Microsoft VS Code/bin/"
+      - "/mnt/c/Python27/"
+      - "/mnt/c/hadoop/bin/"
+      - "/mnt/c/Progra~1/Java/jdk-22/bin/"
+      - "/mnt/c/hadoop/pig/bin/"
+      - "/mnt/c/ProgramData/chocolatey/bin/"
+      - "/mnt/c/Program Files/Git/cmd/"
+      - "/mnt/c/Program Files/GitHub CLI/"
+      - "/mnt/c/Program Files/Docker/Docker/resources/bin/"
+      - "/mnt/c/Strawberry/c/bin/"
+      - "/mnt/c/Strawberry/perl/site/bin/"
+      - "/mnt/c/Strawberry/perl/bin/"
+      - "/mnt/c/Program Files/LLVM/bin/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/"
+      - "/mnt/c/Users/Bhaskar Pandey/.elan/bin/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/MiKTeX/miktex/bin/x64/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Microsoft/WindowsApps/"
+      - "/snap/bin/"
+    found: "/usr/bin/objcopy"
+    search_context:
+      ENV{PATH}:
+        - "/home/bhaskar/.local/bin"
+        - "/home/bhaskar/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/Scripts/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/"
+        - "/mnt/c/Program Files/Microsoft MPI/Bin/"
+        - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Program Files/Microsoft VS Code/bin"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Python27"
+        - "/mnt/c/hadoop/bin"
+        - "/mnt/c/Progra~1/Java/jdk-22/bin"
+        - "/mnt/c/hadoop/pig/bin"
+        - "/mnt/c/ProgramData/chocolatey/bin"
+        - "/mnt/c/Program Files/Git/cmd"
+        - "/mnt/c/Program Files/GitHub CLI/"
+        - "/mnt/c/Program Files/Docker/Docker/resources/bin"
+        - "/mnt/c/Strawberry/c/bin"
+        - "/mnt/c/Strawberry/perl/site/bin"
+        - "/mnt/c/Strawberry/perl/bin"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/Scripts/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/"
+        - "/mnt/c/Users/Bhaskar Pandey/.elan/bin"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/MiKTeX/miktex/bin/x64/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Microsoft/WindowsApps"
+        - "/mnt/c/Strawberry/perl/bin"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_READELF"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "readelf"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/bhaskar/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/Scripts/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/"
+      - "/mnt/c/Program Files/Microsoft MPI/Bin/"
+      - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath/"
+      - "/mnt/c/WINDOWS/system32/"
+      - "/mnt/c/WINDOWS/"
+      - "/mnt/c/WINDOWS/System32/Wbem/"
+      - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+      - "/mnt/c/WINDOWS/System32/OpenSSH/"
+      - "/mnt/c/Program Files/Microsoft VS Code/bin/"
+      - "/mnt/c/Python27/"
+      - "/mnt/c/hadoop/bin/"
+      - "/mnt/c/Progra~1/Java/jdk-22/bin/"
+      - "/mnt/c/hadoop/pig/bin/"
+      - "/mnt/c/ProgramData/chocolatey/bin/"
+      - "/mnt/c/Program Files/Git/cmd/"
+      - "/mnt/c/Program Files/GitHub CLI/"
+      - "/mnt/c/Program Files/Docker/Docker/resources/bin/"
+      - "/mnt/c/Strawberry/c/bin/"
+      - "/mnt/c/Strawberry/perl/site/bin/"
+      - "/mnt/c/Strawberry/perl/bin/"
+      - "/mnt/c/Program Files/LLVM/bin/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/"
+      - "/mnt/c/Users/Bhaskar Pandey/.elan/bin/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/MiKTeX/miktex/bin/x64/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Microsoft/WindowsApps/"
+      - "/snap/bin/"
+    found: "/usr/bin/readelf"
+    search_context:
+      ENV{PATH}:
+        - "/home/bhaskar/.local/bin"
+        - "/home/bhaskar/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/Scripts/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/"
+        - "/mnt/c/Program Files/Microsoft MPI/Bin/"
+        - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Program Files/Microsoft VS Code/bin"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Python27"
+        - "/mnt/c/hadoop/bin"
+        - "/mnt/c/Progra~1/Java/jdk-22/bin"
+        - "/mnt/c/hadoop/pig/bin"
+        - "/mnt/c/ProgramData/chocolatey/bin"
+        - "/mnt/c/Program Files/Git/cmd"
+        - "/mnt/c/Program Files/GitHub CLI/"
+        - "/mnt/c/Program Files/Docker/Docker/resources/bin"
+        - "/mnt/c/Strawberry/c/bin"
+        - "/mnt/c/Strawberry/perl/site/bin"
+        - "/mnt/c/Strawberry/perl/bin"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/Scripts/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/"
+        - "/mnt/c/Users/Bhaskar Pandey/.elan/bin"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/MiKTeX/miktex/bin/x64/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Microsoft/WindowsApps"
+        - "/mnt/c/Strawberry/perl/bin"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_DLLTOOL"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "dlltool"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/bhaskar/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/Scripts/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/"
+      - "/mnt/c/Program Files/Microsoft MPI/Bin/"
+      - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath/"
+      - "/mnt/c/WINDOWS/system32/"
+      - "/mnt/c/WINDOWS/"
+      - "/mnt/c/WINDOWS/System32/Wbem/"
+      - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+      - "/mnt/c/WINDOWS/System32/OpenSSH/"
+      - "/mnt/c/Program Files/Microsoft VS Code/bin/"
+      - "/mnt/c/Python27/"
+      - "/mnt/c/hadoop/bin/"
+      - "/mnt/c/Progra~1/Java/jdk-22/bin/"
+      - "/mnt/c/hadoop/pig/bin/"
+      - "/mnt/c/ProgramData/chocolatey/bin/"
+      - "/mnt/c/Program Files/Git/cmd/"
+      - "/mnt/c/Program Files/GitHub CLI/"
+      - "/mnt/c/Program Files/Docker/Docker/resources/bin/"
+      - "/mnt/c/Strawberry/c/bin/"
+      - "/mnt/c/Strawberry/perl/site/bin/"
+      - "/mnt/c/Strawberry/perl/bin/"
+      - "/mnt/c/Program Files/LLVM/bin/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/"
+      - "/mnt/c/Users/Bhaskar Pandey/.elan/bin/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/MiKTeX/miktex/bin/x64/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Microsoft/WindowsApps/"
+      - "/snap/bin/"
+    searched_directories:
+      - "/usr/bin/dlltool"
+      - "/home/bhaskar/.local/bin/dlltool"
+      - "/usr/local/sbin/dlltool"
+      - "/usr/local/bin/dlltool"
+      - "/usr/sbin/dlltool"
+      - "/sbin/dlltool"
+      - "/bin/dlltool"
+      - "/usr/games/dlltool"
+      - "/usr/local/games/dlltool"
+      - "/usr/lib/wsl/lib/dlltool"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/Scripts/dlltool"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/dlltool"
+      - "/mnt/c/Program Files/Microsoft MPI/Bin/dlltool"
+      - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath/dlltool"
+      - "/mnt/c/WINDOWS/system32/dlltool"
+      - "/mnt/c/WINDOWS/dlltool"
+      - "/mnt/c/WINDOWS/System32/Wbem/dlltool"
+      - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/dlltool"
+      - "/mnt/c/WINDOWS/System32/OpenSSH/dlltool"
+      - "/mnt/c/Program Files/Microsoft VS Code/bin/dlltool"
+      - "/mnt/c/Python27/dlltool"
+      - "/mnt/c/hadoop/bin/dlltool"
+      - "/mnt/c/Progra~1/Java/jdk-22/bin/dlltool"
+      - "/mnt/c/hadoop/pig/bin/dlltool"
+      - "/mnt/c/ProgramData/chocolatey/bin/dlltool"
+      - "/mnt/c/Program Files/Git/cmd/dlltool"
+      - "/mnt/c/Program Files/GitHub CLI/dlltool"
+      - "/mnt/c/Program Files/Docker/Docker/resources/bin/dlltool"
+      - "/mnt/c/Strawberry/c/bin/dlltool"
+      - "/mnt/c/Strawberry/perl/site/bin/dlltool"
+      - "/mnt/c/Strawberry/perl/bin/dlltool"
+      - "/mnt/c/Program Files/LLVM/bin/dlltool"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/Scripts/dlltool"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/dlltool"
+      - "/mnt/c/Users/Bhaskar Pandey/.elan/bin/dlltool"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/MiKTeX/miktex/bin/x64/dlltool"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Microsoft/WindowsApps/dlltool"
+      - "/snap/bin/dlltool"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/home/bhaskar/.local/bin"
+        - "/home/bhaskar/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/Scripts/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/"
+        - "/mnt/c/Program Files/Microsoft MPI/Bin/"
+        - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Program Files/Microsoft VS Code/bin"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Python27"
+        - "/mnt/c/hadoop/bin"
+        - "/mnt/c/Progra~1/Java/jdk-22/bin"
+        - "/mnt/c/hadoop/pig/bin"
+        - "/mnt/c/ProgramData/chocolatey/bin"
+        - "/mnt/c/Program Files/Git/cmd"
+        - "/mnt/c/Program Files/GitHub CLI/"
+        - "/mnt/c/Program Files/Docker/Docker/resources/bin"
+        - "/mnt/c/Strawberry/c/bin"
+        - "/mnt/c/Strawberry/perl/site/bin"
+        - "/mnt/c/Strawberry/perl/bin"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/Scripts/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/"
+        - "/mnt/c/Users/Bhaskar Pandey/.elan/bin"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/MiKTeX/miktex/bin/x64/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Microsoft/WindowsApps"
+        - "/mnt/c/Strawberry/perl/bin"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_ADDR2LINE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "addr2line"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/bhaskar/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/Scripts/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/"
+      - "/mnt/c/Program Files/Microsoft MPI/Bin/"
+      - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath/"
+      - "/mnt/c/WINDOWS/system32/"
+      - "/mnt/c/WINDOWS/"
+      - "/mnt/c/WINDOWS/System32/Wbem/"
+      - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+      - "/mnt/c/WINDOWS/System32/OpenSSH/"
+      - "/mnt/c/Program Files/Microsoft VS Code/bin/"
+      - "/mnt/c/Python27/"
+      - "/mnt/c/hadoop/bin/"
+      - "/mnt/c/Progra~1/Java/jdk-22/bin/"
+      - "/mnt/c/hadoop/pig/bin/"
+      - "/mnt/c/ProgramData/chocolatey/bin/"
+      - "/mnt/c/Program Files/Git/cmd/"
+      - "/mnt/c/Program Files/GitHub CLI/"
+      - "/mnt/c/Program Files/Docker/Docker/resources/bin/"
+      - "/mnt/c/Strawberry/c/bin/"
+      - "/mnt/c/Strawberry/perl/site/bin/"
+      - "/mnt/c/Strawberry/perl/bin/"
+      - "/mnt/c/Program Files/LLVM/bin/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/"
+      - "/mnt/c/Users/Bhaskar Pandey/.elan/bin/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/MiKTeX/miktex/bin/x64/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Microsoft/WindowsApps/"
+      - "/snap/bin/"
+    found: "/usr/bin/addr2line"
+    search_context:
+      ENV{PATH}:
+        - "/home/bhaskar/.local/bin"
+        - "/home/bhaskar/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/Scripts/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/"
+        - "/mnt/c/Program Files/Microsoft MPI/Bin/"
+        - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Program Files/Microsoft VS Code/bin"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Python27"
+        - "/mnt/c/hadoop/bin"
+        - "/mnt/c/Progra~1/Java/jdk-22/bin"
+        - "/mnt/c/hadoop/pig/bin"
+        - "/mnt/c/ProgramData/chocolatey/bin"
+        - "/mnt/c/Program Files/Git/cmd"
+        - "/mnt/c/Program Files/GitHub CLI/"
+        - "/mnt/c/Program Files/Docker/Docker/resources/bin"
+        - "/mnt/c/Strawberry/c/bin"
+        - "/mnt/c/Strawberry/perl/site/bin"
+        - "/mnt/c/Strawberry/perl/bin"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/Scripts/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/"
+        - "/mnt/c/Users/Bhaskar Pandey/.elan/bin"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/MiKTeX/miktex/bin/x64/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Microsoft/WindowsApps"
+        - "/mnt/c/Strawberry/perl/bin"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_TAPI"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "tapi"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/bhaskar/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/Scripts/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/"
+      - "/mnt/c/Program Files/Microsoft MPI/Bin/"
+      - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath/"
+      - "/mnt/c/WINDOWS/system32/"
+      - "/mnt/c/WINDOWS/"
+      - "/mnt/c/WINDOWS/System32/Wbem/"
+      - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+      - "/mnt/c/WINDOWS/System32/OpenSSH/"
+      - "/mnt/c/Program Files/Microsoft VS Code/bin/"
+      - "/mnt/c/Python27/"
+      - "/mnt/c/hadoop/bin/"
+      - "/mnt/c/Progra~1/Java/jdk-22/bin/"
+      - "/mnt/c/hadoop/pig/bin/"
+      - "/mnt/c/ProgramData/chocolatey/bin/"
+      - "/mnt/c/Program Files/Git/cmd/"
+      - "/mnt/c/Program Files/GitHub CLI/"
+      - "/mnt/c/Program Files/Docker/Docker/resources/bin/"
+      - "/mnt/c/Strawberry/c/bin/"
+      - "/mnt/c/Strawberry/perl/site/bin/"
+      - "/mnt/c/Strawberry/perl/bin/"
+      - "/mnt/c/Program Files/LLVM/bin/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/"
+      - "/mnt/c/Users/Bhaskar Pandey/.elan/bin/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/MiKTeX/miktex/bin/x64/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Microsoft/WindowsApps/"
+      - "/snap/bin/"
+    searched_directories:
+      - "/usr/bin/tapi"
+      - "/home/bhaskar/.local/bin/tapi"
+      - "/usr/local/sbin/tapi"
+      - "/usr/local/bin/tapi"
+      - "/usr/sbin/tapi"
+      - "/sbin/tapi"
+      - "/bin/tapi"
+      - "/usr/games/tapi"
+      - "/usr/local/games/tapi"
+      - "/usr/lib/wsl/lib/tapi"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/Scripts/tapi"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/tapi"
+      - "/mnt/c/Program Files/Microsoft MPI/Bin/tapi"
+      - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath/tapi"
+      - "/mnt/c/WINDOWS/system32/tapi"
+      - "/mnt/c/WINDOWS/tapi"
+      - "/mnt/c/WINDOWS/System32/Wbem/tapi"
+      - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/tapi"
+      - "/mnt/c/WINDOWS/System32/OpenSSH/tapi"
+      - "/mnt/c/Program Files/Microsoft VS Code/bin/tapi"
+      - "/mnt/c/Python27/tapi"
+      - "/mnt/c/hadoop/bin/tapi"
+      - "/mnt/c/Progra~1/Java/jdk-22/bin/tapi"
+      - "/mnt/c/hadoop/pig/bin/tapi"
+      - "/mnt/c/ProgramData/chocolatey/bin/tapi"
+      - "/mnt/c/Program Files/Git/cmd/tapi"
+      - "/mnt/c/Program Files/GitHub CLI/tapi"
+      - "/mnt/c/Program Files/Docker/Docker/resources/bin/tapi"
+      - "/mnt/c/Strawberry/c/bin/tapi"
+      - "/mnt/c/Strawberry/perl/site/bin/tapi"
+      - "/mnt/c/Strawberry/perl/bin/tapi"
+      - "/mnt/c/Program Files/LLVM/bin/tapi"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/Scripts/tapi"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/tapi"
+      - "/mnt/c/Users/Bhaskar Pandey/.elan/bin/tapi"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/MiKTeX/miktex/bin/x64/tapi"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Microsoft/WindowsApps/tapi"
+      - "/snap/bin/tapi"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/home/bhaskar/.local/bin"
+        - "/home/bhaskar/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/Scripts/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/"
+        - "/mnt/c/Program Files/Microsoft MPI/Bin/"
+        - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Program Files/Microsoft VS Code/bin"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Python27"
+        - "/mnt/c/hadoop/bin"
+        - "/mnt/c/Progra~1/Java/jdk-22/bin"
+        - "/mnt/c/hadoop/pig/bin"
+        - "/mnt/c/ProgramData/chocolatey/bin"
+        - "/mnt/c/Program Files/Git/cmd"
+        - "/mnt/c/Program Files/GitHub CLI/"
+        - "/mnt/c/Program Files/Docker/Docker/resources/bin"
+        - "/mnt/c/Strawberry/c/bin"
+        - "/mnt/c/Strawberry/perl/site/bin"
+        - "/mnt/c/Strawberry/perl/bin"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/Scripts/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/"
+        - "/mnt/c/Users/Bhaskar Pandey/.elan/bin"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/MiKTeX/miktex/bin/x64/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Microsoft/WindowsApps"
+        - "/mnt/c/Strawberry/perl/bin"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_AR"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ar-9.4"
+      - "gcc-ar-9"
+      - "gcc-ar9"
+      - "gcc-ar"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/bhaskar/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/Scripts/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/"
+      - "/mnt/c/Program Files/Microsoft MPI/Bin/"
+      - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath/"
+      - "/mnt/c/WINDOWS/system32/"
+      - "/mnt/c/WINDOWS/"
+      - "/mnt/c/WINDOWS/System32/Wbem/"
+      - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+      - "/mnt/c/WINDOWS/System32/OpenSSH/"
+      - "/mnt/c/Program Files/Microsoft VS Code/bin/"
+      - "/mnt/c/Python27/"
+      - "/mnt/c/hadoop/bin/"
+      - "/mnt/c/Progra~1/Java/jdk-22/bin/"
+      - "/mnt/c/hadoop/pig/bin/"
+      - "/mnt/c/ProgramData/chocolatey/bin/"
+      - "/mnt/c/Program Files/Git/cmd/"
+      - "/mnt/c/Program Files/GitHub CLI/"
+      - "/mnt/c/Program Files/Docker/Docker/resources/bin/"
+      - "/mnt/c/Strawberry/c/bin/"
+      - "/mnt/c/Strawberry/perl/site/bin/"
+      - "/mnt/c/Strawberry/perl/bin/"
+      - "/mnt/c/Program Files/LLVM/bin/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/"
+      - "/mnt/c/Users/Bhaskar Pandey/.elan/bin/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/MiKTeX/miktex/bin/x64/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Microsoft/WindowsApps/"
+      - "/snap/bin/"
+    searched_directories:
+      - "/usr/bin/gcc-ar-9.4"
+      - "/home/bhaskar/.local/bin/gcc-ar-9.4"
+      - "/usr/local/sbin/gcc-ar-9.4"
+      - "/usr/local/bin/gcc-ar-9.4"
+      - "/usr/sbin/gcc-ar-9.4"
+      - "/sbin/gcc-ar-9.4"
+      - "/bin/gcc-ar-9.4"
+      - "/usr/games/gcc-ar-9.4"
+      - "/usr/local/games/gcc-ar-9.4"
+      - "/usr/lib/wsl/lib/gcc-ar-9.4"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/Scripts/gcc-ar-9.4"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/gcc-ar-9.4"
+      - "/mnt/c/Program Files/Microsoft MPI/Bin/gcc-ar-9.4"
+      - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath/gcc-ar-9.4"
+      - "/mnt/c/WINDOWS/system32/gcc-ar-9.4"
+      - "/mnt/c/WINDOWS/gcc-ar-9.4"
+      - "/mnt/c/WINDOWS/System32/Wbem/gcc-ar-9.4"
+      - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/gcc-ar-9.4"
+      - "/mnt/c/WINDOWS/System32/OpenSSH/gcc-ar-9.4"
+      - "/mnt/c/Program Files/Microsoft VS Code/bin/gcc-ar-9.4"
+      - "/mnt/c/Python27/gcc-ar-9.4"
+      - "/mnt/c/hadoop/bin/gcc-ar-9.4"
+      - "/mnt/c/Progra~1/Java/jdk-22/bin/gcc-ar-9.4"
+      - "/mnt/c/hadoop/pig/bin/gcc-ar-9.4"
+      - "/mnt/c/ProgramData/chocolatey/bin/gcc-ar-9.4"
+      - "/mnt/c/Program Files/Git/cmd/gcc-ar-9.4"
+      - "/mnt/c/Program Files/GitHub CLI/gcc-ar-9.4"
+      - "/mnt/c/Program Files/Docker/Docker/resources/bin/gcc-ar-9.4"
+      - "/mnt/c/Strawberry/c/bin/gcc-ar-9.4"
+      - "/mnt/c/Strawberry/perl/site/bin/gcc-ar-9.4"
+      - "/mnt/c/Strawberry/perl/bin/gcc-ar-9.4"
+      - "/mnt/c/Program Files/LLVM/bin/gcc-ar-9.4"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/Scripts/gcc-ar-9.4"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/gcc-ar-9.4"
+      - "/mnt/c/Users/Bhaskar Pandey/.elan/bin/gcc-ar-9.4"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/MiKTeX/miktex/bin/x64/gcc-ar-9.4"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Microsoft/WindowsApps/gcc-ar-9.4"
+      - "/snap/bin/gcc-ar-9.4"
+    found: "/usr/bin/gcc-ar-9"
+    search_context:
+      ENV{PATH}:
+        - "/home/bhaskar/.local/bin"
+        - "/home/bhaskar/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/Scripts/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/"
+        - "/mnt/c/Program Files/Microsoft MPI/Bin/"
+        - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Program Files/Microsoft VS Code/bin"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Python27"
+        - "/mnt/c/hadoop/bin"
+        - "/mnt/c/Progra~1/Java/jdk-22/bin"
+        - "/mnt/c/hadoop/pig/bin"
+        - "/mnt/c/ProgramData/chocolatey/bin"
+        - "/mnt/c/Program Files/Git/cmd"
+        - "/mnt/c/Program Files/GitHub CLI/"
+        - "/mnt/c/Program Files/Docker/Docker/resources/bin"
+        - "/mnt/c/Strawberry/c/bin"
+        - "/mnt/c/Strawberry/perl/site/bin"
+        - "/mnt/c/Strawberry/perl/bin"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/Scripts/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/"
+        - "/mnt/c/Users/Bhaskar Pandey/.elan/bin"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/MiKTeX/miktex/bin/x64/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Microsoft/WindowsApps"
+        - "/mnt/c/Strawberry/perl/bin"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_RANLIB"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ranlib-9.4"
+      - "gcc-ranlib-9"
+      - "gcc-ranlib9"
+      - "gcc-ranlib"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/bhaskar/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/Scripts/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/"
+      - "/mnt/c/Program Files/Microsoft MPI/Bin/"
+      - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath/"
+      - "/mnt/c/WINDOWS/system32/"
+      - "/mnt/c/WINDOWS/"
+      - "/mnt/c/WINDOWS/System32/Wbem/"
+      - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+      - "/mnt/c/WINDOWS/System32/OpenSSH/"
+      - "/mnt/c/Program Files/Microsoft VS Code/bin/"
+      - "/mnt/c/Python27/"
+      - "/mnt/c/hadoop/bin/"
+      - "/mnt/c/Progra~1/Java/jdk-22/bin/"
+      - "/mnt/c/hadoop/pig/bin/"
+      - "/mnt/c/ProgramData/chocolatey/bin/"
+      - "/mnt/c/Program Files/Git/cmd/"
+      - "/mnt/c/Program Files/GitHub CLI/"
+      - "/mnt/c/Program Files/Docker/Docker/resources/bin/"
+      - "/mnt/c/Strawberry/c/bin/"
+      - "/mnt/c/Strawberry/perl/site/bin/"
+      - "/mnt/c/Strawberry/perl/bin/"
+      - "/mnt/c/Program Files/LLVM/bin/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/"
+      - "/mnt/c/Users/Bhaskar Pandey/.elan/bin/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/MiKTeX/miktex/bin/x64/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Microsoft/WindowsApps/"
+      - "/snap/bin/"
+    searched_directories:
+      - "/usr/bin/gcc-ranlib-9.4"
+      - "/home/bhaskar/.local/bin/gcc-ranlib-9.4"
+      - "/usr/local/sbin/gcc-ranlib-9.4"
+      - "/usr/local/bin/gcc-ranlib-9.4"
+      - "/usr/sbin/gcc-ranlib-9.4"
+      - "/sbin/gcc-ranlib-9.4"
+      - "/bin/gcc-ranlib-9.4"
+      - "/usr/games/gcc-ranlib-9.4"
+      - "/usr/local/games/gcc-ranlib-9.4"
+      - "/usr/lib/wsl/lib/gcc-ranlib-9.4"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/Scripts/gcc-ranlib-9.4"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/gcc-ranlib-9.4"
+      - "/mnt/c/Program Files/Microsoft MPI/Bin/gcc-ranlib-9.4"
+      - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath/gcc-ranlib-9.4"
+      - "/mnt/c/WINDOWS/system32/gcc-ranlib-9.4"
+      - "/mnt/c/WINDOWS/gcc-ranlib-9.4"
+      - "/mnt/c/WINDOWS/System32/Wbem/gcc-ranlib-9.4"
+      - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/gcc-ranlib-9.4"
+      - "/mnt/c/WINDOWS/System32/OpenSSH/gcc-ranlib-9.4"
+      - "/mnt/c/Program Files/Microsoft VS Code/bin/gcc-ranlib-9.4"
+      - "/mnt/c/Python27/gcc-ranlib-9.4"
+      - "/mnt/c/hadoop/bin/gcc-ranlib-9.4"
+      - "/mnt/c/Progra~1/Java/jdk-22/bin/gcc-ranlib-9.4"
+      - "/mnt/c/hadoop/pig/bin/gcc-ranlib-9.4"
+      - "/mnt/c/ProgramData/chocolatey/bin/gcc-ranlib-9.4"
+      - "/mnt/c/Program Files/Git/cmd/gcc-ranlib-9.4"
+      - "/mnt/c/Program Files/GitHub CLI/gcc-ranlib-9.4"
+      - "/mnt/c/Program Files/Docker/Docker/resources/bin/gcc-ranlib-9.4"
+      - "/mnt/c/Strawberry/c/bin/gcc-ranlib-9.4"
+      - "/mnt/c/Strawberry/perl/site/bin/gcc-ranlib-9.4"
+      - "/mnt/c/Strawberry/perl/bin/gcc-ranlib-9.4"
+      - "/mnt/c/Program Files/LLVM/bin/gcc-ranlib-9.4"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/Scripts/gcc-ranlib-9.4"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/gcc-ranlib-9.4"
+      - "/mnt/c/Users/Bhaskar Pandey/.elan/bin/gcc-ranlib-9.4"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/MiKTeX/miktex/bin/x64/gcc-ranlib-9.4"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-9.4"
+      - "/snap/bin/gcc-ranlib-9.4"
+    found: "/usr/bin/gcc-ranlib-9"
+    search_context:
+      ENV{PATH}:
+        - "/home/bhaskar/.local/bin"
+        - "/home/bhaskar/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/Scripts/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/"
+        - "/mnt/c/Program Files/Microsoft MPI/Bin/"
+        - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Program Files/Microsoft VS Code/bin"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Python27"
+        - "/mnt/c/hadoop/bin"
+        - "/mnt/c/Progra~1/Java/jdk-22/bin"
+        - "/mnt/c/hadoop/pig/bin"
+        - "/mnt/c/ProgramData/chocolatey/bin"
+        - "/mnt/c/Program Files/Git/cmd"
+        - "/mnt/c/Program Files/GitHub CLI/"
+        - "/mnt/c/Program Files/Docker/Docker/resources/bin"
+        - "/mnt/c/Strawberry/c/bin"
+        - "/mnt/c/Strawberry/perl/site/bin"
+        - "/mnt/c/Strawberry/perl/bin"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/Scripts/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/"
+        - "/mnt/c/Users/Bhaskar Pandey/.elan/bin"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/MiKTeX/miktex/bin/x64/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Microsoft/WindowsApps"
+        - "/mnt/c/Strawberry/perl/bin"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCompiler.cmake:54 (find_program)"
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:69 (_cmake_find_compiler)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER"
+    description: "CXX compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "c++"
+      - "CC"
+      - "g++"
+      - "aCC"
+      - "cl"
+      - "bcc"
+      - "xlC"
+      - "icpx"
+      - "icx"
+      - "clang++"
+    candidate_directories:
+      - "/usr/bin/"
+    found: "/usr/bin/c++"
+    search_context:
+      ENV{PATH}:
+        - "/home/bhaskar/.local/bin"
+        - "/home/bhaskar/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/Scripts/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/"
+        - "/mnt/c/Program Files/Microsoft MPI/Bin/"
+        - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Program Files/Microsoft VS Code/bin"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Python27"
+        - "/mnt/c/hadoop/bin"
+        - "/mnt/c/Progra~1/Java/jdk-22/bin"
+        - "/mnt/c/hadoop/pig/bin"
+        - "/mnt/c/ProgramData/chocolatey/bin"
+        - "/mnt/c/Program Files/Git/cmd"
+        - "/mnt/c/Program Files/GitHub CLI/"
+        - "/mnt/c/Program Files/Docker/Docker/resources/bin"
+        - "/mnt/c/Strawberry/c/bin"
+        - "/mnt/c/Strawberry/perl/site/bin"
+        - "/mnt/c/Strawberry/perl/bin"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/Scripts/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/"
+        - "/mnt/c/Users/Bhaskar Pandey/.elan/bin"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/MiKTeX/miktex/bin/x64/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Microsoft/WindowsApps"
+        - "/mnt/c/Strawberry/perl/bin"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:468 (find_file)"
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:506 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/"
+    found: "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "/home/bhaskar/.local/bin"
+        - "/home/bhaskar/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/Scripts/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/"
+        - "/mnt/c/Program Files/Microsoft MPI/Bin/"
+        - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Program Files/Microsoft VS Code/bin"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Python27"
+        - "/mnt/c/hadoop/bin"
+        - "/mnt/c/Progra~1/Java/jdk-22/bin"
+        - "/mnt/c/hadoop/pig/bin"
+        - "/mnt/c/ProgramData/chocolatey/bin"
+        - "/mnt/c/Program Files/Git/cmd"
+        - "/mnt/c/Program Files/GitHub CLI/"
+        - "/mnt/c/Program Files/Docker/Docker/resources/bin"
+        - "/mnt/c/Strawberry/c/bin"
+        - "/mnt/c/Strawberry/perl/site/bin"
+        - "/mnt/c/Strawberry/perl/bin"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/Scripts/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/"
+        - "/mnt/c/Users/Bhaskar Pandey/.elan/bin"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/MiKTeX/miktex/bin/x64/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Microsoft/WindowsApps"
+        - "/mnt/c/Strawberry/perl/bin"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/snap/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/bhaskar/projects/graves/src/graph-builder/build/CMakeFiles/4.3.2/CompilerIdCXX/a.out
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_AR"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ar-9.4"
+      - "gcc-ar-9"
+      - "gcc-ar9"
+      - "gcc-ar"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/bhaskar/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/Scripts/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/"
+      - "/mnt/c/Program Files/Microsoft MPI/Bin/"
+      - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath/"
+      - "/mnt/c/WINDOWS/system32/"
+      - "/mnt/c/WINDOWS/"
+      - "/mnt/c/WINDOWS/System32/Wbem/"
+      - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+      - "/mnt/c/WINDOWS/System32/OpenSSH/"
+      - "/mnt/c/Program Files/Microsoft VS Code/bin/"
+      - "/mnt/c/Python27/"
+      - "/mnt/c/hadoop/bin/"
+      - "/mnt/c/Progra~1/Java/jdk-22/bin/"
+      - "/mnt/c/hadoop/pig/bin/"
+      - "/mnt/c/ProgramData/chocolatey/bin/"
+      - "/mnt/c/Program Files/Git/cmd/"
+      - "/mnt/c/Program Files/GitHub CLI/"
+      - "/mnt/c/Program Files/Docker/Docker/resources/bin/"
+      - "/mnt/c/Strawberry/c/bin/"
+      - "/mnt/c/Strawberry/perl/site/bin/"
+      - "/mnt/c/Strawberry/perl/bin/"
+      - "/mnt/c/Program Files/LLVM/bin/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/"
+      - "/mnt/c/Users/Bhaskar Pandey/.elan/bin/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/MiKTeX/miktex/bin/x64/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Microsoft/WindowsApps/"
+      - "/snap/bin/"
+    searched_directories:
+      - "/usr/bin/gcc-ar-9.4"
+      - "/home/bhaskar/.local/bin/gcc-ar-9.4"
+      - "/usr/local/sbin/gcc-ar-9.4"
+      - "/usr/local/bin/gcc-ar-9.4"
+      - "/usr/sbin/gcc-ar-9.4"
+      - "/sbin/gcc-ar-9.4"
+      - "/bin/gcc-ar-9.4"
+      - "/usr/games/gcc-ar-9.4"
+      - "/usr/local/games/gcc-ar-9.4"
+      - "/usr/lib/wsl/lib/gcc-ar-9.4"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/Scripts/gcc-ar-9.4"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/gcc-ar-9.4"
+      - "/mnt/c/Program Files/Microsoft MPI/Bin/gcc-ar-9.4"
+      - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath/gcc-ar-9.4"
+      - "/mnt/c/WINDOWS/system32/gcc-ar-9.4"
+      - "/mnt/c/WINDOWS/gcc-ar-9.4"
+      - "/mnt/c/WINDOWS/System32/Wbem/gcc-ar-9.4"
+      - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/gcc-ar-9.4"
+      - "/mnt/c/WINDOWS/System32/OpenSSH/gcc-ar-9.4"
+      - "/mnt/c/Program Files/Microsoft VS Code/bin/gcc-ar-9.4"
+      - "/mnt/c/Python27/gcc-ar-9.4"
+      - "/mnt/c/hadoop/bin/gcc-ar-9.4"
+      - "/mnt/c/Progra~1/Java/jdk-22/bin/gcc-ar-9.4"
+      - "/mnt/c/hadoop/pig/bin/gcc-ar-9.4"
+      - "/mnt/c/ProgramData/chocolatey/bin/gcc-ar-9.4"
+      - "/mnt/c/Program Files/Git/cmd/gcc-ar-9.4"
+      - "/mnt/c/Program Files/GitHub CLI/gcc-ar-9.4"
+      - "/mnt/c/Program Files/Docker/Docker/resources/bin/gcc-ar-9.4"
+      - "/mnt/c/Strawberry/c/bin/gcc-ar-9.4"
+      - "/mnt/c/Strawberry/perl/site/bin/gcc-ar-9.4"
+      - "/mnt/c/Strawberry/perl/bin/gcc-ar-9.4"
+      - "/mnt/c/Program Files/LLVM/bin/gcc-ar-9.4"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/Scripts/gcc-ar-9.4"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/gcc-ar-9.4"
+      - "/mnt/c/Users/Bhaskar Pandey/.elan/bin/gcc-ar-9.4"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/MiKTeX/miktex/bin/x64/gcc-ar-9.4"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Microsoft/WindowsApps/gcc-ar-9.4"
+      - "/snap/bin/gcc-ar-9.4"
+    found: "/usr/bin/gcc-ar-9"
+    search_context:
+      ENV{PATH}:
+        - "/home/bhaskar/.local/bin"
+        - "/home/bhaskar/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/Scripts/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/"
+        - "/mnt/c/Program Files/Microsoft MPI/Bin/"
+        - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Program Files/Microsoft VS Code/bin"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Python27"
+        - "/mnt/c/hadoop/bin"
+        - "/mnt/c/Progra~1/Java/jdk-22/bin"
+        - "/mnt/c/hadoop/pig/bin"
+        - "/mnt/c/ProgramData/chocolatey/bin"
+        - "/mnt/c/Program Files/Git/cmd"
+        - "/mnt/c/Program Files/GitHub CLI/"
+        - "/mnt/c/Program Files/Docker/Docker/resources/bin"
+        - "/mnt/c/Strawberry/c/bin"
+        - "/mnt/c/Strawberry/perl/site/bin"
+        - "/mnt/c/Strawberry/perl/bin"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/Scripts/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/"
+        - "/mnt/c/Users/Bhaskar Pandey/.elan/bin"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/MiKTeX/miktex/bin/x64/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Microsoft/WindowsApps"
+        - "/mnt/c/Strawberry/perl/bin"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_RANLIB"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ranlib-9.4"
+      - "gcc-ranlib-9"
+      - "gcc-ranlib9"
+      - "gcc-ranlib"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/bhaskar/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/Scripts/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/"
+      - "/mnt/c/Program Files/Microsoft MPI/Bin/"
+      - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath/"
+      - "/mnt/c/WINDOWS/system32/"
+      - "/mnt/c/WINDOWS/"
+      - "/mnt/c/WINDOWS/System32/Wbem/"
+      - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+      - "/mnt/c/WINDOWS/System32/OpenSSH/"
+      - "/mnt/c/Program Files/Microsoft VS Code/bin/"
+      - "/mnt/c/Python27/"
+      - "/mnt/c/hadoop/bin/"
+      - "/mnt/c/Progra~1/Java/jdk-22/bin/"
+      - "/mnt/c/hadoop/pig/bin/"
+      - "/mnt/c/ProgramData/chocolatey/bin/"
+      - "/mnt/c/Program Files/Git/cmd/"
+      - "/mnt/c/Program Files/GitHub CLI/"
+      - "/mnt/c/Program Files/Docker/Docker/resources/bin/"
+      - "/mnt/c/Strawberry/c/bin/"
+      - "/mnt/c/Strawberry/perl/site/bin/"
+      - "/mnt/c/Strawberry/perl/bin/"
+      - "/mnt/c/Program Files/LLVM/bin/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/"
+      - "/mnt/c/Users/Bhaskar Pandey/.elan/bin/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/MiKTeX/miktex/bin/x64/"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Microsoft/WindowsApps/"
+      - "/snap/bin/"
+    searched_directories:
+      - "/usr/bin/gcc-ranlib-9.4"
+      - "/home/bhaskar/.local/bin/gcc-ranlib-9.4"
+      - "/usr/local/sbin/gcc-ranlib-9.4"
+      - "/usr/local/bin/gcc-ranlib-9.4"
+      - "/usr/sbin/gcc-ranlib-9.4"
+      - "/sbin/gcc-ranlib-9.4"
+      - "/bin/gcc-ranlib-9.4"
+      - "/usr/games/gcc-ranlib-9.4"
+      - "/usr/local/games/gcc-ranlib-9.4"
+      - "/usr/lib/wsl/lib/gcc-ranlib-9.4"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/Scripts/gcc-ranlib-9.4"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/gcc-ranlib-9.4"
+      - "/mnt/c/Program Files/Microsoft MPI/Bin/gcc-ranlib-9.4"
+      - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath/gcc-ranlib-9.4"
+      - "/mnt/c/WINDOWS/system32/gcc-ranlib-9.4"
+      - "/mnt/c/WINDOWS/gcc-ranlib-9.4"
+      - "/mnt/c/WINDOWS/System32/Wbem/gcc-ranlib-9.4"
+      - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/gcc-ranlib-9.4"
+      - "/mnt/c/WINDOWS/System32/OpenSSH/gcc-ranlib-9.4"
+      - "/mnt/c/Program Files/Microsoft VS Code/bin/gcc-ranlib-9.4"
+      - "/mnt/c/Python27/gcc-ranlib-9.4"
+      - "/mnt/c/hadoop/bin/gcc-ranlib-9.4"
+      - "/mnt/c/Progra~1/Java/jdk-22/bin/gcc-ranlib-9.4"
+      - "/mnt/c/hadoop/pig/bin/gcc-ranlib-9.4"
+      - "/mnt/c/ProgramData/chocolatey/bin/gcc-ranlib-9.4"
+      - "/mnt/c/Program Files/Git/cmd/gcc-ranlib-9.4"
+      - "/mnt/c/Program Files/GitHub CLI/gcc-ranlib-9.4"
+      - "/mnt/c/Program Files/Docker/Docker/resources/bin/gcc-ranlib-9.4"
+      - "/mnt/c/Strawberry/c/bin/gcc-ranlib-9.4"
+      - "/mnt/c/Strawberry/perl/site/bin/gcc-ranlib-9.4"
+      - "/mnt/c/Strawberry/perl/bin/gcc-ranlib-9.4"
+      - "/mnt/c/Program Files/LLVM/bin/gcc-ranlib-9.4"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/Scripts/gcc-ranlib-9.4"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/gcc-ranlib-9.4"
+      - "/mnt/c/Users/Bhaskar Pandey/.elan/bin/gcc-ranlib-9.4"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/MiKTeX/miktex/bin/x64/gcc-ranlib-9.4"
+      - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-9.4"
+      - "/snap/bin/gcc-ranlib-9.4"
+    found: "/usr/bin/gcc-ranlib-9"
+    search_context:
+      ENV{PATH}:
+        - "/home/bhaskar/.local/bin"
+        - "/home/bhaskar/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/Scripts/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/"
+        - "/mnt/c/Program Files/Microsoft MPI/Bin/"
+        - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Program Files/Microsoft VS Code/bin"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Python27"
+        - "/mnt/c/hadoop/bin"
+        - "/mnt/c/Progra~1/Java/jdk-22/bin"
+        - "/mnt/c/hadoop/pig/bin"
+        - "/mnt/c/ProgramData/chocolatey/bin"
+        - "/mnt/c/Program Files/Git/cmd"
+        - "/mnt/c/Program Files/GitHub CLI/"
+        - "/mnt/c/Program Files/Docker/Docker/resources/bin"
+        - "/mnt/c/Strawberry/c/bin"
+        - "/mnt/c/Strawberry/perl/site/bin"
+        - "/mnt/c/Strawberry/perl/bin"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/Scripts/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/"
+        - "/mnt/c/Users/Bhaskar Pandey/.elan/bin"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/MiKTeX/miktex/bin/x64/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Microsoft/WindowsApps"
+        - "/mnt/c/Strawberry/perl/bin"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/snap/bin"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/bhaskar/projects/graves/src/graph-builder/build/CMakeFiles/CMakeScratch/TryCompile-VxWqAk"
+      binary: "/home/bhaskar/projects/graves/src/graph-builder/build/CMakeFiles/CMakeScratch/TryCompile-VxWqAk"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/bhaskar/projects/graves/src/graph-builder/build/CMakeFiles/CMakeScratch/TryCompile-VxWqAk'
+        
+        Run Build Command(s): /home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_cbcf6/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_cbcf6.dir/build.make CMakeFiles/cmTC_cbcf6.dir/build
+        make[1]: Entering directory '/home/bhaskar/projects/graves/src/graph-builder/build/CMakeFiles/CMakeScratch/TryCompile-VxWqAk'
+        Building C object CMakeFiles/cmTC_cbcf6.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_cbcf6.dir/CMakeCCompilerABI.c.o -c /home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+        Thread model: posix
+        gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_cbcf6.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_cbcf6.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccU6XWuY.s
+        GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-linux-gnu/9/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 01da938ff5dc2163489aa33cb3b747a7
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_cbcf6.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+         as -v --64 -o CMakeFiles/cmTC_cbcf6.dir/CMakeCCompilerABI.c.o /tmp/ccU6XWuY.s
+        GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_cbcf6.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+        Linking C executable cmTC_cbcf6
+        /home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cbcf6.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+        Thread model: posix
+        gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_cbcf6' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccr4Mgkq.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_cbcf6 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_cbcf6.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+        collect2 version 9.4.0
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccr4Mgkq.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_cbcf6 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_cbcf6.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Ubuntu) 2.34
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_cbcf6' '-mtune=generic' '-march=x86-64'
+        /usr/bin/cc  -v -Wl,-v CMakeFiles/cmTC_cbcf6.dir/CMakeCCompilerABI.c.o -o cmTC_cbcf6
+        make[1]: Leaving directory '/home/bhaskar/projects/graves/src/graph-builder/build/CMakeFiles/CMakeScratch/TryCompile-VxWqAk'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/9/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/9/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/home/bhaskar/projects/graves/src/graph-builder/build/CMakeFiles/CMakeScratch/TryCompile-VxWqAk']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_cbcf6/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_cbcf6.dir/build.make CMakeFiles/cmTC_cbcf6.dir/build]
+        ignore line: [make[1]: Entering directory '/home/bhaskar/projects/graves/src/graph-builder/build/CMakeFiles/CMakeScratch/TryCompile-VxWqAk']
+        ignore line: [Building C object CMakeFiles/cmTC_cbcf6.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_cbcf6.dir/CMakeCCompilerABI.c.o -c /home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_cbcf6.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_cbcf6.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccU6XWuY.s]
+        ignore line: [GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 01da938ff5dc2163489aa33cb3b747a7]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_cbcf6.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_cbcf6.dir/CMakeCCompilerABI.c.o /tmp/ccU6XWuY.s]
+        ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_cbcf6.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [Linking C executable cmTC_cbcf6]
+        ignore line: [/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cbcf6.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_cbcf6' '-mtune=generic' '-march=x86-64']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccr4Mgkq.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_cbcf6 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_cbcf6.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccr4Mgkq.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_cbcf6] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_cbcf6.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [collect2 version 9.4.0]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccr4Mgkq.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_cbcf6 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_cbcf6.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+        linker tool for 'C': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9] ==> [/usr/lib/gcc/x86_64-linux-gnu/9]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/9;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Running the C compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Ubuntu) 2.34
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/bhaskar/projects/graves/src/graph-builder/build/CMakeFiles/CMakeScratch/TryCompile-Bp4LUj"
+      binary: "/home/bhaskar/projects/graves/src/graph-builder/build/CMakeFiles/CMakeScratch/TryCompile-Bp4LUj"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/bhaskar/projects/graves/src/graph-builder/build/CMakeFiles/CMakeScratch/TryCompile-Bp4LUj'
+        
+        Run Build Command(s): /home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_983e1/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_983e1.dir/build.make CMakeFiles/cmTC_983e1.dir/build
+        make[1]: Entering directory '/home/bhaskar/projects/graves/src/graph-builder/build/CMakeFiles/CMakeScratch/TryCompile-Bp4LUj'
+        Building CXX object CMakeFiles/cmTC_983e1.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_983e1.dir/CMakeCXXCompilerABI.cpp.o -c /home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+        Thread model: posix
+        gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_983e1.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_983e1.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc03rocn.s
+        GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/9"
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/include/c++/9
+         /usr/include/x86_64-linux-gnu/c++/9
+         /usr/include/c++/9/backward
+         /usr/lib/gcc/x86_64-linux-gnu/9/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 3d1eba838554fa2348dba760e4770469
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_983e1.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         as -v --64 -o CMakeFiles/cmTC_983e1.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc03rocn.s
+        GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_983e1.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+        Linking CXX executable cmTC_983e1
+        /home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_983e1.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+        Thread model: posix
+        gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_983e1' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccEL2toP.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_983e1 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_983e1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+        collect2 version 9.4.0
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccEL2toP.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_983e1 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_983e1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Ubuntu) 2.34
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_983e1' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_983e1.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_983e1
+        make[1]: Leaving directory '/home/bhaskar/projects/graves/src/graph-builder/build/CMakeFiles/CMakeScratch/TryCompile-Bp4LUj'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/include/c++/9]
+          add: [/usr/include/x86_64-linux-gnu/c++/9]
+          add: [/usr/include/c++/9/backward]
+          add: [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/include/c++/9] ==> [/usr/include/c++/9]
+        collapse include dir [/usr/include/x86_64-linux-gnu/c++/9] ==> [/usr/include/x86_64-linux-gnu/c++/9]
+        collapse include dir [/usr/include/c++/9/backward] ==> [/usr/include/c++/9/backward]
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/9/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/9;/usr/include/x86_64-linux-gnu/c++/9;/usr/include/c++/9/backward;/usr/lib/gcc/x86_64-linux-gnu/9/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/home/bhaskar/projects/graves/src/graph-builder/build/CMakeFiles/CMakeScratch/TryCompile-Bp4LUj']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_983e1/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_983e1.dir/build.make CMakeFiles/cmTC_983e1.dir/build]
+        ignore line: [make[1]: Entering directory '/home/bhaskar/projects/graves/src/graph-builder/build/CMakeFiles/CMakeScratch/TryCompile-Bp4LUj']
+        ignore line: [Building CXX object CMakeFiles/cmTC_983e1.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_983e1.dir/CMakeCXXCompilerABI.cpp.o -c /home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_983e1.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_983e1.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc03rocn.s]
+        ignore line: [GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/9"]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/include/c++/9]
+        ignore line: [ /usr/include/x86_64-linux-gnu/c++/9]
+        ignore line: [ /usr/include/c++/9/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 3d1eba838554fa2348dba760e4770469]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_983e1.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_983e1.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc03rocn.s]
+        ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_983e1.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [Linking CXX executable cmTC_983e1]
+        ignore line: [/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_983e1.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_983e1' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccEL2toP.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_983e1 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_983e1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccEL2toP.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_983e1] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_983e1.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [collect2 version 9.4.0]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccEL2toP.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_983e1 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_983e1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+        linker tool for 'CXX': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9] ==> [/usr/lib/gcc/x86_64-linux-gnu/9]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/9;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Ubuntu) 2.34
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "CMakeLists.txt:8 (find_package)"
+    name: "LLVM"
+    configs:
+      -
+        filename: "LLVM.cps"
+        kind: "cps"
+      -
+        filename: "llvm.cps"
+        kind: "cps"
+      -
+        filename: "LLVMConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "llvm-config.cmake"
+        kind: "cmake"
+    version_request:
+      version: "11"
+      version_complete: "11"
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "LLVM"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/home/bhaskar/projects/graves/src/graph-builder/build/CMakeFiles/pkgRedirects/LLVMConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/bhaskar/projects/graves/src/graph-builder/build/CMakeFiles/pkgRedirects/llvm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/bhaskar/projects/graves/src/graph-builder/build/CMakeFiles/pkgRedirects/lib/x86_64-linux-gnu/cps/LLVM.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/bhaskar/projects/graves/src/graph-builder/build/CMakeFiles/pkgRedirects/lib/x86_64-linux-gnu/cps/llvm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/bhaskar/projects/graves/src/graph-builder/build/CMakeFiles/pkgRedirects/lib/cps/LLVM.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/bhaskar/projects/graves/src/graph-builder/build/CMakeFiles/pkgRedirects/lib/cps/llvm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/bhaskar/projects/graves/src/graph-builder/build/CMakeFiles/pkgRedirects/share/cps/LLVM.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/bhaskar/projects/graves/src/graph-builder/build/CMakeFiles/pkgRedirects/share/cps/llvm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/bhaskar/.local/LLVMConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/bhaskar/.local/llvm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/bhaskar/.local/lib/x86_64-linux-gnu/cps/LLVM.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/bhaskar/.local/lib/x86_64-linux-gnu/cps/llvm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/bhaskar/.local/lib/cps/LLVM.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/bhaskar/.local/lib/cps/llvm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/bhaskar/.local/share/cps/LLVM.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/bhaskar/.local/share/cps/llvm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/LLVMConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/llvm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/lib/x86_64-linux-gnu/cps/LLVM.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/lib/x86_64-linux-gnu/cps/llvm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/lib/cps/LLVM.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/lib/cps/llvm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/share/cps/LLVM.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/share/cps/llvm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/LLVMConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/llvm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/x86_64-linux-gnu/cps/LLVM.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/x86_64-linux-gnu/cps/llvm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cps/LLVM.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cps/llvm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/share/cps/LLVM.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/share/cps/llvm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/llvm-11/LLVMConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/llvm-11/llvm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found:
+      path: "/usr/lib/llvm-11/cmake/LLVMConfig.cmake"
+      mode: "config"
+      version: "11.0.0"
+    search_context:
+      ENV{PATH}:
+        - "/home/bhaskar/.local/bin"
+        - "/home/bhaskar/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/Scripts/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/"
+        - "/mnt/c/Program Files/Microsoft MPI/Bin/"
+        - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Program Files/Microsoft VS Code/bin"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Python27"
+        - "/mnt/c/hadoop/bin"
+        - "/mnt/c/Progra~1/Java/jdk-22/bin"
+        - "/mnt/c/hadoop/pig/bin"
+        - "/mnt/c/ProgramData/chocolatey/bin"
+        - "/mnt/c/Program Files/Git/cmd"
+        - "/mnt/c/Program Files/GitHub CLI/"
+        - "/mnt/c/Program Files/Docker/Docker/resources/bin"
+        - "/mnt/c/Strawberry/c/bin"
+        - "/mnt/c/Strawberry/perl/site/bin"
+        - "/mnt/c/Strawberry/perl/bin"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/Scripts/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/"
+        - "/mnt/c/Users/Bhaskar Pandey/.elan/bin"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/MiKTeX/miktex/bin/x64/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Microsoft/WindowsApps"
+        - "/mnt/c/Strawberry/perl/bin"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "CMakeLists.txt:14 (find_package)"
+    name: "Clang"
+    configs:
+      -
+        filename: "Clang.cps"
+        kind: "cps"
+      -
+        filename: "clang.cps"
+        kind: "cps"
+      -
+        filename: "ClangConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "clang-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "Clang"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/home/bhaskar/projects/graves/src/graph-builder/build/CMakeFiles/pkgRedirects/ClangConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/bhaskar/projects/graves/src/graph-builder/build/CMakeFiles/pkgRedirects/clang-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/bhaskar/projects/graves/src/graph-builder/build/CMakeFiles/pkgRedirects/lib/x86_64-linux-gnu/cps/Clang.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/bhaskar/projects/graves/src/graph-builder/build/CMakeFiles/pkgRedirects/lib/x86_64-linux-gnu/cps/clang.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/bhaskar/projects/graves/src/graph-builder/build/CMakeFiles/pkgRedirects/lib/cps/Clang.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/bhaskar/projects/graves/src/graph-builder/build/CMakeFiles/pkgRedirects/lib/cps/clang.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/bhaskar/projects/graves/src/graph-builder/build/CMakeFiles/pkgRedirects/share/cps/Clang.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/bhaskar/projects/graves/src/graph-builder/build/CMakeFiles/pkgRedirects/share/cps/clang.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/bhaskar/.local/ClangConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/bhaskar/.local/clang-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/bhaskar/.local/lib/x86_64-linux-gnu/cps/Clang.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/bhaskar/.local/lib/x86_64-linux-gnu/cps/clang.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/bhaskar/.local/lib/cps/Clang.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/bhaskar/.local/lib/cps/clang.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/bhaskar/.local/share/cps/Clang.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/bhaskar/.local/share/cps/clang.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/ClangConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/clang-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/lib/x86_64-linux-gnu/cps/Clang.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/lib/x86_64-linux-gnu/cps/clang.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/lib/cps/Clang.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/lib/cps/clang.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/share/cps/Clang.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/share/cps/clang.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/ClangConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/clang-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/x86_64-linux-gnu/cps/Clang.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/x86_64-linux-gnu/cps/clang.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cps/Clang.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cps/clang.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/share/cps/Clang.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/share/cps/clang.cps"
+        mode: "cps"
+        reason: "no_exist"
+    found:
+      path: "/usr/lib/cmake/clang-11/ClangConfig.cmake"
+      mode: "config"
+      version: ""
+    search_context:
+      ENV{PATH}:
+        - "/home/bhaskar/.local/bin"
+        - "/home/bhaskar/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/Scripts/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python312/"
+        - "/mnt/c/Program Files/Microsoft MPI/Bin/"
+        - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Program Files/Microsoft VS Code/bin"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Python27"
+        - "/mnt/c/hadoop/bin"
+        - "/mnt/c/Progra~1/Java/jdk-22/bin"
+        - "/mnt/c/hadoop/pig/bin"
+        - "/mnt/c/ProgramData/chocolatey/bin"
+        - "/mnt/c/Program Files/Git/cmd"
+        - "/mnt/c/Program Files/GitHub CLI/"
+        - "/mnt/c/Program Files/Docker/Docker/resources/bin"
+        - "/mnt/c/Strawberry/c/bin"
+        - "/mnt/c/Strawberry/perl/site/bin"
+        - "/mnt/c/Strawberry/perl/bin"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/Scripts/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/Python/Python313/"
+        - "/mnt/c/Users/Bhaskar Pandey/.elan/bin"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Programs/MiKTeX/miktex/bin/x64/"
+        - "/mnt/c/Users/Bhaskar Pandey/AppData/Local/Microsoft/WindowsApps"
+        - "/mnt/c/Strawberry/perl/bin"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/bhaskar/.local/lib/python3.8/site-packages/cmake/data"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+...

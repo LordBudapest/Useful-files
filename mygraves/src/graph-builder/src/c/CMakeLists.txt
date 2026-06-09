@@ -1,0 +1,7 @@
+add_subdirectory(utils)
+add_subdirectory(ast)
+add_subdirectory(icfg)
+add_subdirectory(call)
+add_subdirectory(data)
+add_subdirectory(graph-builder)
+add_subdirectory(app)

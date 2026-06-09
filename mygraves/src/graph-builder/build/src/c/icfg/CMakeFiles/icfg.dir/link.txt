@@ -1,0 +1,2 @@
+/usr/bin/ar qc libicfg.a CMakeFiles/icfg.dir/ICFGBuilder.cpp.o
+/usr/bin/ranlib libicfg.a

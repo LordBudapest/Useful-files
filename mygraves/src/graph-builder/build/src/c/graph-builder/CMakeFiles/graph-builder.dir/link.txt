@@ -1,0 +1,2 @@
+/usr/bin/ar qc libgraph-builder.a
+/usr/bin/ranlib libgraph-builder.a

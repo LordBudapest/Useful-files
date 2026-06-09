@@ -1,0 +1,16 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/bhaskar/projects/graves/src/graph-builder/build/cmake_install.cmake",
+		"/home/bhaskar/projects/graves/src/graph-builder/build/src/cmake_install.cmake",
+		"/home/bhaskar/projects/graves/src/graph-builder/build/src/c/cmake_install.cmake",
+		"/home/bhaskar/projects/graves/src/graph-builder/build/src/c/utils/cmake_install.cmake",
+		"/home/bhaskar/projects/graves/src/graph-builder/build/src/c/ast/cmake_install.cmake",
+		"/home/bhaskar/projects/graves/src/graph-builder/build/src/c/icfg/cmake_install.cmake",
+		"/home/bhaskar/projects/graves/src/graph-builder/build/src/c/call/cmake_install.cmake",
+		"/home/bhaskar/projects/graves/src/graph-builder/build/src/c/data/cmake_install.cmake",
+		"/home/bhaskar/projects/graves/src/graph-builder/build/src/c/graph-builder/cmake_install.cmake",
+		"/home/bhaskar/projects/graves/src/graph-builder/build/src/c/app/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
