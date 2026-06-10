@@ -10,14 +10,13 @@ import torch.nn as nn
 import os, itertools, tqdm, json, time
 import numpy as np
 from scipy.stats import spearmanr
-from torch.distributed import ReduceOp
-from torch.cuda.amp import autocast
+from torch.amp import autocast
 
 '''
 File - utils.py
 This file defines some utility functions
 '''
-
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 class GeometricDataset(GDataset):
     def __init__(self, labels, data_dir, edge_sets, should_cache=False):
         self.labels = labels
@@ -39,7 +38,8 @@ class GeometricDataset(GDataset):
 
             edges_tensor = [torch.from_numpy(edges[edgeSet]) for edgeSet in self.edge_sets]
             if "AST" in self.edge_sets:
-                edges_tensor[0] = torch.cat((edges_tensor[0],(edges_tensor[0].flip([1]))))
+                ast_idx = self.edge_sets.index("AST")
+                edges_tensor[ast_idx] = torch.cat((edges_tensor[ast_idx],(edges_tensor[ast_idx].flip([1]))))
 
             edge_labels = torch.cat([torch.full((len(edges_tensor[i]),1),i) for i in range(len(edges_tensor))], dim=0).float()        
             edges_tensor = torch.cat(edges_tensor).transpose(0,1).long()
@@ -48,9 +48,20 @@ class GeometricDataset(GDataset):
             tokens = torch.from_numpy(data['node_rep'])
 
             label = torch.tensor(self.labels[idx][1])
-            problemType = torch.tensor([float(self.labels[idx][0].split("|||")[1])])
 
-            res = Data(x=tokens.float(), edge_index=edges_tensor, edge_attr=edge_labels, problemType=problemType),label
+            parts = self.labels[idx][0].split("|||")
+
+            if len(parts) > 1:
+                problemType = torch.tensor([float(parts[1])])
+            else:
+                problemType = torch.tensor([0.0])
+
+            res = Data(
+                x=tokens.float(),
+                edge_index=edges_tensor,
+                edge_attr=edge_labels,
+                problemType=problemType
+            ), label
 
         if self.cache and idx not in self.cache:
             self.cache[idx] = res
@@ -60,17 +71,28 @@ class GeometricDataset(GDataset):
         return res
 
 class ModifiedMarginRankingLoss(nn.Module):
-    def __init__(self, margin=0,gpu=0):
+    def __init__(self, margin=0, device=None):
         super(ModifiedMarginRankingLoss, self).__init__()
         self.margin=margin
-        self.gpu = gpu
+        self.device = device or torch.device("cuda" if torch.cuda.is_available() else "cpu")
     
     def forward(self, scores, labels):
-        loss = torch.zeros(1).to(device=self.gpu)
+        loss = torch.zeros(1).to(device = self.device)
         for i, j in itertools.combinations(list(range(len(labels[0]))),2):
             loss_fn = MarginRankingLoss(margin=self.margin*abs(i-j))
             indx = labels.argsort()
-            loss += loss_fn(scores.gather(1, indx[:,i].unsqueeze(1)), scores.gather(1, indx[:,j].unsqueeze(1)), torch.tensor([[1 if i > j else -1]*scores.size(0)]).to(device=self.gpu))
+            pred_i = scores.gather(1, indx[:, i].unsqueeze(1)).squeeze(1)
+            pred_j = scores.gather(1, indx[:, j].unsqueeze(1)).squeeze(1)
+
+            target = torch.full(
+                (scores.size(0),),
+                1 if i > j else -1,
+                device=self.device,
+                dtype=torch.float
+            )
+
+            loss += loss_fn(pred_i, pred_j, target)
+            #loss += loss_fn(scores.gather(1, indx[:,i].unsqueeze(1)), scores.gather(1, indx[:,j].unsqueeze(1)), torch.tensor([[1 if i > j else -1]*scores.size(0)]).to(device=self.device))
         return loss
 
 class topKLoss(nn.Module):
@@ -86,7 +108,7 @@ class topKLoss(nn.Module):
 
 
 
-def train_model(model, loss_fn, batchSize, trainset, valset, optimizer, scheduler, num_epochs, gpu, task, k=1, trainWeights=None, valWeights=None):
+def train_model(model, loss_fn, batchSize, trainset, valset, optimizer, scheduler, num_epochs, task, k=1, trainWeights=None, valWeights=None):
     '''
     Function used to train networks
     '''
@@ -113,15 +135,15 @@ def train_model(model, loss_fn, batchSize, trainset, valset, optimizer, schedule
         torch.enable_grad()
         success_counter = 0
         for (i, (graphs, labels)) in enumerate(tqdm.tqdm(train_loader)):
-            graphs = graphs.to(device=gpu)
-            labels = labels.to(device=gpu)
+            graphs = graphs.to(device)
+            labels = labels.to(device)
             assert graphs.x.size(0) == graphs.batch.size(0)
 
             if task == "success" and labels.max()<0:
                 pass
 
-            with autocast():
-                scores = model(graphs.x, graphs.edge_index, graphs.batch, graphs.problemType)
+            with autocast(device_type=device.type):
+                scores = model(graphs.x, graphs.edge_index, graphs.batch, graphs.problemType.unsqueeze(1))
                 if task == "rank":
                     loss = loss_fn(scores, labels)
                     cum_loss+=loss.cpu().detach().item()
@@ -152,10 +174,18 @@ def train_model(model, loss_fn, batchSize, trainset, valset, optimizer, schedule
             else:
                 condition = False
             if condition or (i+1)==len(train_loader):
-                mystr = "Train-epoch "+ str(epoch) + ", Avg-Loss: "+ str(round(cum_loss/(i*batchSize), 4)) + ", Avg-Corr:" +  str(round(corr_sum/(i*batchSize), 4)) + ", TopK-Acc:"+str(round(topk_acc/(i*batchSize), 4)) + ", Success-Acc:"+str(round(success_acc/success_counter,4))
+                num_seen = len(train_loader.dataset)
+
+                mystr = (
+                    "Train-epoch " + str(epoch)
+                    + ", Avg-Loss: " + str(round(cum_loss / (i + 1), 4))
+                    + ", Avg-Corr:" + str(round(corr_sum / num_seen, 4))
+                    + ", TopK-Acc:" + str(round(topk_acc / num_seen, 4))
+                    + ", Success-Acc:" + str(round(success_acc / max(success_counter, 1), 4))
+                )
                 print(mystr)
-                train_accuracies.append(round(corr_sum/i, 4))
-                train_losses.append(round(cum_loss/i, 4))
+                train_accuracies.append(round(corr_sum / num_seen, 4))
+                train_losses.append(round(cum_loss / (i + 1), 4))
 
 
         corr_sum = 0.0
@@ -168,13 +198,13 @@ def train_model(model, loss_fn, batchSize, trainset, valset, optimizer, schedule
         success_counter = 0
 
         for (i, (graphs,labels)) in enumerate((val_loader)):
-            graphs = graphs.to(device=gpu)
-            labels = labels.to(device=gpu)
+            graphs = graphs.to(device)
+            labels = labels.to(device)
             if task == "success" and labels.max()<0:
                 pass
-            with autocast():
+            with autocast(device_type=device.type):
                 with torch.no_grad():
-                    scores = model(graphs.x, graphs.edge_index, graphs.batch, graphs.problemType)
+                    scores = model(graphs.x, graphs.edge_index, graphs.batch, graphs.problemType.unsqueeze(1))
                     if task == "rank":
                         loss = loss_fn(scores, labels)
                     elif task == "topk" or task == "success":
@@ -195,18 +225,25 @@ def train_model(model, loss_fn, batchSize, trainset, valset, optimizer, schedule
 
         scheduler.step(cum_loss/(i+1))
 
+        num_seen = len(val_loader.dataset)
 
-        val_accuracies.append(round(corr_sum/i, 4))
-        val_losses.append(round(cum_loss/i, 4))
+        val_accuracies.append(round(corr_sum / num_seen, 4))
+        val_losses.append(round(cum_loss / (i + 1), 4))
 
-        mystr = "Valid-epoch "+ str(epoch) + ", Avg-Loss: "+ str(round(cum_loss/(i*batchSize), 4)) + ", Avg-Corr:" +  str(round(corr_sum/(i*batchSize), 4)) + ", TopK-Acc:"+str(round(topk_acc/(i*batchSize), 4)) + ", Success-Acc:"+str(round(success_acc/success_counter,4))
+        mystr = (
+            "Valid-epoch " + str(epoch)
+            + ", Avg-Loss: " + str(round(cum_loss / (i + 1), 4))
+            + ", Avg-Corr:" + str(round(corr_sum / num_seen, 4))
+            + ", TopK-Acc:" + str(round(topk_acc / num_seen, 4))
+            + ", Success-Acc:" + str(round(success_acc / max(success_counter, 1), 4))
+        )
         print(mystr)
         if optimizer.param_groups[0]['lr']<1e-7:
             break
     
     return train_accuracies, train_losses, val_accuracies, val_losses
 
-def evaluate(model, test_set, files, gpu=0, k=3):
+def evaluate(model, test_set, files, k=3):
     '''
     Function used to evaluate model on test set
     '''
@@ -226,16 +263,12 @@ def evaluate(model, test_set, files, gpu=0, k=3):
     test_loader = torch_geometric.loader.DataLoader(dataset=test_set, batch_size=1)
 
     for (i, (graphs,labels)) in enumerate(tqdm.tqdm(test_loader, leave=False)):
-        graphs = graphs.to(device=gpu)
-        labels = labels.to(device=gpu)
+        graphs = graphs.to(device)
+        labels = labels.to(device)
         problemTypes = graphs.problemType
-        with autocast():
+        with autocast(device_type=device.type):
             with torch.no_grad():
-<<<<<<< HEAD
-                scores = model(graphs.x, graphs.edge_index, graphs.batch, graphs.problemType)
-=======
-                scores = model(graphs.x, graphs.edge_index, graphs.batch,graphs.problemType)
->>>>>>> 94747a9bd621d22b8ceffb4c2659a981b803222c
+                scores = model(graphs.x, graphs.edge_index, graphs.batch, graphs.problemType.unsqueeze(1))
         
         predicts[files[i]] = scores.tolist()
 
@@ -265,26 +298,31 @@ def evaluate(model, test_set, files, gpu=0, k=3):
         probCounter[int(problemTypes.item())]+=1
     
     res = [[],[],[],[],[]]
-    
-    res[0] = np.array([corr_sum.sum()/probCounter.sum(), topKAcc.sum()/probCounter.sum(), bestPredicts.sum()/probCounter.sum(), correctPredicts.sum()/possibleCorrect.sum(), predSpot.sum(axis=0)], dtype=object)
+    overall_prob = max(probCounter.sum(), 1)
+    overall_possible = max(possibleCorrect.sum(), 1)
+
+    res[0] = np.array([
+        corr_sum.sum() / overall_prob,
+        topKAcc.sum() / overall_prob,
+        bestPredicts.sum() / overall_prob,
+        correctPredicts.sum() / overall_possible,
+        predSpot.sum(axis=0)
+    ], dtype=object)
     for i in range(0,len(res)-1):
-        res[i+1] = np.array([corr_sum[i]/probCounter[i], topKAcc[i]/probCounter[i], bestPredicts[i]/probCounter[i], correctPredicts[i]/possibleCorrect[i], predSpot[i]], dtype=object)
+        prob = max(probCounter[i], 1)
+        possible = max(possibleCorrect[i], 1)
+
+        res[i+1] = np.array([
+            corr_sum[i] / prob,
+            topKAcc[i] / prob,
+            bestPredicts[i] / prob,
+            correctPredicts[i] / possible,
+            predSpot[i]
+        ], dtype=object)
 
 
     return res, predicted, predicts
 def getCorrectProblemTypes(labels, problemTypes):
-    '''
-    Function used to make sure we are only looking at problem types that we want
-    '''
-    if "overflow" not in problemTypes:
-	    labels = [item for item in labels if item[0].split("|||")[1]!="0"]
-    if "reachSafety" not in problemTypes:
-    	labels = [item for item in labels if item[0].split("|||")[1]!="1"]
-    if "termination" not in problemTypes:
-        labels = [item for item in labels if item[0].split("|||")[1]!="2"]
-    if "memSafety" not in problemTypes:
-        labels = [item for item in labels if item[0].split("|||")[1]!="3"]
-
     return labels
 
 def groupLabels(labels, mapping="../../data/toolMapping.json"):

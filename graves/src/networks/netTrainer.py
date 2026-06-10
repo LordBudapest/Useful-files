@@ -3,25 +3,31 @@ from utils.utils import ModifiedMarginRankingLoss, train_model, getCorrectProble
 import torch, json, time, argparse
 import torch.optim as optim
 import numpy as np
-from torch_geometric.nn import GNNExplainer, AttentionalAggregation
-import torch_geometric
 
 '''
 File - netTrainer.py
 This file is a driver used to train networks
 '''
-
+device = torch.device(
+    "cuda" if torch.cuda.is_available() else "cpu"
+)
 if __name__ == '__main__':
 	parser = argparse.ArgumentParser(description="GNN Trainer")
 	parser.add_argument("--mp-layers", help="Number of message passing layers (Default=0)", default=0, type=int)
 	parser.add_argument("-e", "--epochs", help="Number of training epochs (Default=20)", default=20, type=int)
-	parser.add_argument("--edge-sets", help="Which edges sets to include: AST, CFG, Data (Default=All)", nargs='+', default=['AST', 'Data', "ICFG"], choices=['AST', 'Data', "ICFG"])
+	parser.add_argument("--edge-sets", help="Which edges sets to include: AST, CFG, Data, Call (Default=All)", nargs='+', default=['AST', 'Data', "ICFG", "Call"], choices=['AST', 'Data', "ICFG", "Call"])
 	parser.add_argument("-p", "--problem-types", help="Which problem types to consider:termination, overflow, reachSafety, memSafety (Default=All)", nargs="+", default=['termination', 'overflow', 'reachSafety', 'memSafety'], choices=['termination', 'overflow', 'reachSafety', 'memSafety'])
 	parser.add_argument('-n','--net', help="GGNN, GAT, EGC", default="EGC", choices=["GGNN","GAT", "EGC"])
 	parser.add_argument("-m", "--mode", help="Mode for jumping (Default LSTM): max, cat, lstm", default="cat", choices=['max', 'cat', 'lstm'])
 	parser.add_argument("--pool-type", help="How to pool Nodes (max, mean, add, attention, power, softmax, equilibrium)", default=["attention"], choices=["max",'min', "mean","add","attention","power","softmax","equilibrium"], nargs='+')
 	parser.add_argument("--aggregators", help="How to pool Nodes (max, mean, add, attention, power, softmax, equilibrium)", default=["attention"], choices=["max",'min', "mean","symnorm","std"], nargs='+')
-	parser.add_argument("-g", "--gpu", help="Which GPU should the model be on", default=0, type=int)
+	parser.add_argument(
+	"-g",
+	"--gpu",
+	help="Device",
+	default="cuda:0" if torch.cuda.is_available() else "cpu",
+	type=str
+    )
 	parser.add_argument("--task", help="Which task are you training for (topK, rank, success)?", default="rank", choices=['topk', 'ranking', 'success'])
 	parser.add_argument("-k", "--topk", help="k for topk (1-10)", default=3, type=int)
 	parser.add_argument("--cache", help="If activated, will cache dataset in memory", action='store_true')
@@ -65,30 +71,29 @@ if __name__ == '__main__':
 
 
 	if args.net == 'GGNN':
-		model = GGNN(passes=args.mp_layers, numEdgeSets=len(args.edge_sets), inputLayerSize=train_set[0][0].x.size(1), outputLayerSize=len(trainLabels[0][1]), mode=args.mode).to(device=args.gpu)
+		model = GGNN(passes=args.mp_layers, numEdgeSets=len(args.edge_sets), inputLayerSize=train_set[0][0].x.size(1), outputLayerSize=len(trainLabels[0][1]), mode=args.mode).to(device)
 	elif args.net == "GAT":
-		model = GAT(passes=args.mp_layers, numEdgeSets=len(args.edge_sets), numAttentionLayers=5, inputLayerSize=train_set[0][0].x.size(1), outputLayerSize=len(trainLabels[0][1]), mode=args.mode, k=20, shouldJump=args.no_jump, pool=args.pool_type).to(device=args.gpu)
+		model = GAT(passes=args.mp_layers, numEdgeSets=len(args.edge_sets), numAttentionLayers=5, inputLayerSize=train_set[0][0].x.size(1), outputLayerSize=len(trainLabels[0][1]), mode=args.mode, k=20, shouldJump=args.no_jump, pool=args.pool_type).to(device)
 	else:
-		model = EGC(passes=args.mp_layers, inputLayerSize=train_set[0][0].x.size(1), outputLayerSize=len(trainLabels[0][1]), aggregators=args.aggregators,shouldJump=args.no_jump, pool=args.pool_type).to(device=args.gpu)
+		model = EGC(passes=args.mp_layers, inputLayerSize=train_set[0][0].x.size(1), outputLayerSize=len(trainLabels[0][1]), aggregators=args.aggregators,shouldJump=args.no_jump, pool=args.pool_type).to(device)
 
 	if args.task == "rank":
-		loss_fn = ModifiedMarginRankingLoss(margin=0.1, gpu=args.gpu).to(device=args.gpu)
+		loss_fn = ModifiedMarginRankingLoss(margin=0.1, device=device).to(device)
 	elif args.task == "topk" or args.task == "success":
 		loss_fn = torch.nn.NLLLoss()
 	else:
 		raise ValueError("Not a valid task") 
 	optimizer = optim.Adam(model.parameters(), lr = 1e-3, weight_decay=1e-4)
 	scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, patience=3, verbose=True)
-	report = train_model(model=model, loss_fn = loss_fn, batchSize=5, trainset=train_set, valset=val_set, optimizer=optimizer, scheduler=scheduler, num_epochs=args.epochs, gpu=args.gpu, task=args.task, k=args.topk)
+	report = train_model(model=model, loss_fn = loss_fn, batchSize=5, trainset=train_set, valset=val_set, optimizer=optimizer, scheduler=scheduler, num_epochs=args.epochs, task=args.task, k=args.topk)
 	train_acc, train_loss, val_acc, val_loss = report
-	(overallRes, overflowRes, reachSafetyRes, terminationRes, memSafetyRes), (overallChoices, overflowChoices, reachSafetyChoices, terminationChoices, memSafetyChoices), predicts = evaluate(model, test_set, files=[x[0] for x in testLabels], gpu=args.gpu)
+	(overallRes, overflowRes, reachSafetyRes, terminationRes, memSafetyRes), (overallChoices, overflowChoices, reachSafetyChoices, terminationChoices, memSafetyChoices), predicts = evaluate(model, test_set, files=[x[0] for x in testLabels])
 	
 
 	del args.dataset
 	del args.train
 	del args.val
 	del args.test
-	del args.gpu
 	del args.topk
 	del args.cache
 	del args.alg

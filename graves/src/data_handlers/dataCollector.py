@@ -59,14 +59,15 @@ print(
 # Graph Parsing
 # --------------------------------
 def parseGraph(filename, rawGraph):
-    ptrToToken = {}
 
     graph = {
-        "tokens": {},
-        "AST": {},
-        "ICFG": {},
-        "Data": {}
+        "nodes": [],
+        "outEdges": [],
+        "inEdges": [],
+        "edgeAttr": []
     }
+
+    section = None
 
     for line in rawGraph:
 
@@ -75,50 +76,51 @@ def parseGraph(filename, rawGraph):
         if not line:
             continue
 
-        line = line.replace("(void)", "")
-        line = line.replace(")", "")
-        line = line.replace("(", "")
+        # section switches
+        if line == "Nodes":
+            section = "nodes"
+            continue
 
-        parts = line.split(",")
+        elif line == "outEdge":
+            section = "outEdges"
+            continue
 
+        elif line == "inEdge":
+            section = "inEdges"
+            continue
+
+        elif line == "edgeAttr":
+            section = "edgeAttr"
+            continue
+
+        # collect data
         try:
-            kind = parts[0]
+            if section == "nodes":
+                graph["nodes"].append(line)
 
-            if kind == "AST":
+            elif section == "outEdges":
+                graph["outEdges"].append(int(line))
 
-                if parts[1] not in ptrToToken:
-                    ptrToToken[parts[1]] = parts[2]
+            elif section == "inEdges":
+                graph["inEdges"].append(int(line))
 
-                if parts[3] not in ptrToToken:
-                    ptrToToken[parts[3]] = parts[4]
-
-                graph["tokens"] = ptrToToken
-
-                graph["AST"].setdefault(
-                    parts[1], []
-                ).append(parts[3])
-
-            elif kind == "CFG":
-                graph["ICFG"].setdefault(
-                    parts[2], []
-                ).append(parts[4])
-
-            elif kind == "DFG":
-                graph["Data"].setdefault(
-                    parts[1], []
-                ).append(parts[3])
+            elif section == "edgeAttr":
+                graph["edgeAttr"].append(int(line))
 
         except Exception:
             continue
 
     safe_name = (
-    	os.path.relpath(filename, DATASET_DIR).replace("/","__")
-    )
-    out_file = (
-    	"../../data/graphs/"+safe_name+".json"
+        os.path.relpath(filename, DATASET_DIR)
+        .replace("/", "__")
     )
 
-    json.dump(graph, open(out_file, "w"))
+    out_file = (
+        "../../data/graphs/" + safe_name + ".json"
+    )
+
+    with open(out_file, "w") as f:
+        json.dump(graph, f)
 
 
 # --------------------------------
@@ -127,7 +129,15 @@ def parseGraph(filename, rawGraph):
 def handler(filename):
 
     proc = Popen(
-        ["graph-builder", filename],
+		[
+	    "graph-builder",
+	    "--print",
+	    "--ast",
+	    "--icfg",
+	    "--data",
+	    "--call",
+	    filename
+		],
         stdout=PIPE,
         stderr=PIPE
     )
@@ -147,6 +157,8 @@ def handler(filename):
         return None
 
     print("FAILED:", filename)
+    if stderr:
+        print(stderr.decode("utf-8"))
     return filename
 
 

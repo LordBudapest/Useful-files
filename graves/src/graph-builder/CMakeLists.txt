@@ -5,7 +5,7 @@ project(graph-builder)
 set (CMAKE_CXX_STANDARD 17)
 
 # LLVM.
-find_package(LLVM 11 REQUIRED CONFIG)
+find_package(LLVM 11.1 REQUIRED CONFIG)
 include_directories(${LLVM_INCLUDE_DIRS})
 add_definitions(${LLVM_DEFINITIONS})
 llvm_map_components_to_libnames(llvm_libs Support Core Passes)

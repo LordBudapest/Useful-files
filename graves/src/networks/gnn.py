@@ -79,11 +79,11 @@ class EGC(torch.nn.Module):
         x = self.pool(x, batch.long())
 
         try:
-            x = torch.cat((x, problemType.unsqueeze(1).cuda()), dim=1)
+            x = torch.cat((x, problemType.to(x.device)),dim=1)
         except Exception as e:
             print(e)
-            print(problemType.unsqueeze(1))
-            print(x.size())
+            print(problemType.shape)
+            print(x.shape)
             exit()
 
         x = self.fc1(x)
